@@ -1,6 +1,7 @@
 #!/bin/bash
+cd
 echo "I install program number 1"
-mkdir GITApps
+mkdir ~/GITApps
 cd GITApps
 git clone https://aur.archlinux.org/gdm-prime.git
 cd gdm-prime
@@ -38,6 +39,7 @@ echo "Success"
 echo "I install program number 6"
 cd GITApps
 git clone https://aur.archlinux.org/touchegg.git
+cd touchegg
 makepkg -sri
 cd
 echo "Success"
@@ -54,4 +56,19 @@ git clone https://aur.archlinux.org/enpass-bin.git
 cd enpass-bin
 makepkg -sri
 cd
-"Success"
+echo "Success"
+echo "I install program number 9"
+cd GITApps
+git clone https://aur.archlinux.org/zoom.git
+cd zoom
+makepkg -sri
+cd
+echo "Success"
+echo "I install program number 10"
+cd GITApps
+git clone https://aur.archlinux.org/optimus-manager.git 
+cd optimus-manager
+makepkg -sri
+cd
+sudo echo "WaylandEnable=false" >> /etc/gdm/custom.conf
+echo "Success"
