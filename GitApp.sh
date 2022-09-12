@@ -42,6 +42,8 @@ git clone https://aur.archlinux.org/touchegg.git
 cd touchegg
 makepkg -sri
 cd
+sudo systemctl enable touchegg.service
+sudo systemctl start touchegg
 echo "Success"
 echo "I install program number 7"
 cd GITApps
@@ -71,4 +73,11 @@ cd optimus-manager
 makepkg -sri
 cd
 sudo echo "WaylandEnable=false" >> /etc/gdm/custom.conf
+echo "Success"
+echo "I install program number 11"
+cd GITApps
+git clone https://aur.archlinux.org/timeshift.git 
+cd timeshift
+makepkg -sri
+cd
 echo "Success"

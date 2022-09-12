@@ -17,6 +17,7 @@ echo "Success"
 read m
 echo "Open multilib in /etc/pacman.conf"
 read m
+sudo pacman -Sy
 echo "I install favorite program"
-sudo pacman -S gnome-tweaks thunderbird vlc audacity blender discord firefox htop inkscape kdenlive krita neofetch obs-studio qbittorrent scrcpy steam
+sudo pacman -S gnome-tweaks thunderbird vlc audacity blender discord firefox htop inkscape kdenlive krita neofetch obs-studio qbittorrent scrcpy steam 
 echo "Success"
