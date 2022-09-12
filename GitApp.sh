@@ -83,8 +83,8 @@ cd
 echo "Success"
 echo "I install program number 12"
 cd GITApps
-git clone https://aur.archlinux.org/openoffice-bin.git 
-cd openoffice-bin
+git clone https://aur.archlinux.org/onlyoffice-bin.git
+cd onlyoffice-bin
 makepkg -sri
 cd
 echo "Success"
