@@ -81,3 +81,10 @@ cd timeshift
 makepkg -sri
 cd
 echo "Success"
+echo "I install program number 12"
+cd GITApps
+git clone https://aur.archlinux.org/openoffice-bin.git 
+cd openoffice-bin
+makepkg -sri
+cd
+echo "Success"
