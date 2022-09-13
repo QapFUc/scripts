@@ -1,0 +1,111 @@
+vСоздание базовой системы:
+
+Должно быть 3 раздела.
+1. efi
+2. swap
+3. home
+
+mkfs.fat -F32 /dev/nvme0n1p1
+mkswap /dev/nvme0n1p2
+swapon /dev/nvme0n1p2
+mkfs.btrfs -f /dev/nvme0n1p3
+
+mount /dev/nvme0n1p3 /mnt
+mkdir /mnt/boot
+mount /dev/nvme0n1p1 /mnt/boot
+
+pacstrap /mnt base linux linux-firmware
+
+genfstab -U /mnt >> /mnt/etc/fstab
+arch-chroot /mnt
+pacman -S dhcpcd vim sudo p7zip
+systemctl enable dhcpcd.service
+
+vim /etc/locale.gen
+раскоминтируем два языка русский и английский
+locale-gen
+localectl set-locale en_US.UTF-8
+passwd
+useradd -m -g users -G adm,storage,wheel,power,audio,video -s /bin/bash qapfuc
+passwd qapfuc
+EDITOR=vim visudo
+пишем своего пользователя
+
+pacman -S grub efibootmgr
+mkdir /boot/efi
+mount /dev/nvme0n1p1 /boot/efi
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable
+grub-mkconfig -o /boot/grub/grub.cfg
+
+exit
+umount -R /mnt
+reboot
+
+Настройка системы:
+
+sudo pacman -S base-devel git
+sudo pacman -S pipewire pipewire-pulse pipewire-jack pipewire-media-session
+sudo pacman -S xorg xorg-xinit xorg-xrandr fish alacritty firefox
+sudo vim /etc/pacman.conf
+Открываем 32-битные библиотеки
+sudo pacman -Sy
+sudo pacman -S networkmanager
+sudo systemctl enable NetworkManager
+sudo systemctl start NetworkManager
+sudo nmcli device wifi connect ''Name'' password ''password'' name ''Name''
+sudo pacman -S mesa-demos
+
+
+#######################################################################################
+                                  ###    #####
+                                   #         #
+                                   #         #
+                                   #      ####
+                                   #         #
+                                   #         #
+                                  ###    #####
+#######################################################################################
+sudo pacman -S sddm
+sudo systemctl enable sddm.service
+sudo pacman -S i3-gaps picom rofi polybar nitrogen
+cp /etc/X11/xinit/xinitrc /home/qapfuc/.xinitrc
+vim .xinitrc
+Стираем 5 последних строчек и пишем:
+'
+nitrogen --restore &
+picom &
+exec i3-gaps
+'
+mkdir /home/qapfuc/.config
+mkdir /home/qapfuc/.config/polybar
+cp /etc/polybar/config.ini /home/qapfuc/.config/polybar
+vim /home/qapfuc/.config/polybar/launch.sh
+Пишем:
+'
+#!/bin/bash
+killall -q polybar
+polybar mybar 2>&1 / tee -a /tmp/polybar.log & disown
+'
+chmod +x /home/qapfuc/.config/polybar/launch.sh
+cp /etc/polybar/config.ini /home/qapfuc/.config/polybar/
+sudo reboot
+vim /home/qapfuc/.config/i3/config
+Вместо запуска i3status пишем:
+'
+exec_always --no-startup-id /home/qapfuc/.config/polybar/launch.sh
+'
+Закидываем из данного архива .conf в корневую папку
+
+sudo pacman -S p7zip
+sudp pacman -S qbittorrent
+Скачиваем qbtheme
+Установим inxi
+sudo pacman -S telegram-desktop
+sudo pacman -S flameshot 
+установим stacer
+sudo pacman -S nvidia nvidia-utils
+sudo pacman -S nvidia-settings
+
+
+
+

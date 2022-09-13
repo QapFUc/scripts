@@ -6,6 +6,7 @@ echo "Success"
 read m
 echo "I install WM"
 sudo pacman -S plasma
+systemctl enable sddm.service
 echo "Success"
 read m
 echo "I activated system program"

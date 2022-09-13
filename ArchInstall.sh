@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo chmod +x GitApp.sh
-sudo chmod +x Pacman.sh
-./Pacman.sh
-./GitApp.sh
+sudo ./Pacman.sh
+sudo ./UploadSettings.sh
+sudo ./GitApp.sh
