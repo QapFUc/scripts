@@ -1,7 +1,7 @@
 #!/bin/bash
 cd
 echo "I install system program"
-sudo pacman -S base-devel git pipewire pipewire-pulse pipewire-jack xorg mesa-demos nvidia android-udev
+sudo pacman -S base-devel git pipewire pipewire-pulse pipewire-jack xorg mesa-demos nvidia android-udev cmake
 echo "Success"
 read m
 echo "I install WM"
