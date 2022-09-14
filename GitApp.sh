@@ -1,6 +1,20 @@
 #!/bin/bash
 cd
-
+echo "I install program number 1"
+mkdir ~/GITApps
+cd GITApps
+git clone https://aur.archlinux.org/gdm-prime.git
+cd gdm-prime
+makepkg -sri
+cd
+echo "Success"
+echo "I install program number 2"
+cd GITApps
+git clone https://aur.archlinux.org/gnome-browser-connector.git 
+cd gnome-browser-connector
+makepkg -sri
+cd
+echo "Success"
 echo "I install program number 3"
 cd GITApps
 git clone https://aur.archlinux.org/spotify.git
@@ -19,6 +33,22 @@ echo "I install program number 5"
 cd GITApps
 git clone https://aur.archlinux.org/teams.git
 cd teams
+makepkg -sri
+cd
+echo "Success"
+echo "I install program number 6"
+cd GITApps
+git clone https://aur.archlinux.org/touchegg.git
+cd touchegg
+makepkg -sri
+cd
+sudo systemctl enable touchegg.service
+sudo systemctl start touchegg
+echo "Success"
+echo "I install program number 7"
+cd GITApps
+git clone https://aur.archlinux.org/appeditor-git.git
+cd appeditor-git
 makepkg -sri
 cd
 echo "Success"
