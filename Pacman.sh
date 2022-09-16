@@ -20,4 +20,5 @@ read m
 sudo pacman -Sy
 echo "I install favorite program"
 sudo pacman -S rclone gnome-bluetooth gnome-tweaks telegram-desktop fish thunderbird vlc audacity blender discord firefox htop inkscape kdenlive krita gimp neofetch obs-studio qbittorrent scrcpy steam 
+sudo systemctl enable bluetooth.service 
 echo "Success"
