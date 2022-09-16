@@ -17,6 +17,7 @@ cd
 echo "Success"
 echo "I install program number 3"
 cd GITApps
+gpg --recv-keys 5E3C45D7B312C643
 git clone https://aur.archlinux.org/spotify.git
 cd spotify
 makepkg -sri
