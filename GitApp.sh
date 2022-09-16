@@ -88,10 +88,3 @@ cd onlyoffice-bin
 makepkg -sri
 cd
 echo "Success"
-echo "I install program number 13"
-cd GITApps
-git clone https://aur.archlinux.org/spotify.git
-cd spotify
-makepkg -sri
-cd
-echo "Success"
