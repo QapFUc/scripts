@@ -89,3 +89,10 @@ cd onlyoffice-bin
 makepkg -sri
 cd
 echo "Success"
+echo "I instal program number 13"
+cd GITApps
+git clone https://aur.archlinux.org/clion.git
+cd clion
+makepkg -sri
+cd
+echo "Success"
