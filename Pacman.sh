@@ -2,6 +2,7 @@
 cd
 echo "I install system program"
 sudo pacman -S base-devel git amd-ucode pipewire pipewire-pulse pipewire-jack xorg mesa-demos nvidia android-udev cmake gcc ligda grub-customizer
+sudo pacman -S wine wine-mono wine-gecko
 echo "Success"
 read m
 echo "I install WM"
