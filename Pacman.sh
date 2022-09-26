@@ -2,7 +2,6 @@
 cd
 echo "I install system program"
 sudo pacman -S base-devel git amd-ucode pipewire pipewire-pulse pipewire-jack xorg mesa-demos nvidia android-udev cmake gcc ligda grub-customizer
-sudo pacman -S --needed nvidia-dkms nvidia-utils lib32-nvidia-utils nvidia-settings vulkan-icd-loader lib32-vulkan-icd-loader
 echo "Success"
 read m
 echo "I install WM"
