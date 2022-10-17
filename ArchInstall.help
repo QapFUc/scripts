@@ -1,0 +1,82 @@
+Создаем MBR таблицу на диске любым способом
+Раздел номер 1 загрузочный 512МБ В гайде: sda1 (У вас могут быть другие)
+Раздел номер 2 основной все остальное В гайде: sda2 (У вас могут быть другие)
+
+Зашифруем основной диск
+cryptsetup -y -v luksFormat /dev/sda2
+Создаем пароль для диска
+
+Открываем диск
+cryptsetup open /dev/sda2 cryptdisk
+Вводим пароль от диска
+
+Форматируем
+mkfs.vfar /dev/sda1
+mkfs.btrfs -f /dev/mapper/cryptdisk
+
+Монтируем диски и создаем сабволюмы
+mount /dev/mapper/cryptdisk /mn
+btrfs subvolume create /mnt/sv_root
+btrfs subvolume create /mnt/sv_home
+umount -R /mnt
+mount -o subvol=sv_root,compress=lzo,ssd,autodefrag /dev/mapper/cryptdisk /mnt
+mkdir /mnt/boot
+mkdir /mnt/home
+mount /dev/sda1 /mnt/boot
+mount -o subvol=sv_home,compress-lzo,ssd,autodefrag /dev/mapper/cryptdisk /mnt/home
+
+Создаем базовую систему (xorg gnome firefox ставить не обязательно можно использовать аналоги)
+pacstrap /mnt base base-devel linux linux-firmware dhcpcd networkmanager mesa-demos btfs-progs sudo p7zip git vim xorg gnome firefox
+genfstab -U /mnt >> /mnt/etc/fstab
+
+arch-chroot /mnt
+
+vim /etc/mkinitcpio.conf
+В хуки пишем 
+"encrypt"
+
+Пересобираем ядро
+mkinitcpio -p linux
+
+Создаем загрузчик
+cd boot/ 
+bootctl install
+
+Редактируем параметры загрузчика
+vim /boot/loader/loader.conf
+Удаляем все и создаем строку
+"default arch"
+
+Редактируем конфигурацию
+vim /boot/loader/entries/arch.conf
+Пишем в нем
+"
+title Arch
+linux /vmlinuz-linux
+initrd /initramfs-linux.img
+options cryptdevice=UUID=ВАШ_UUID:cryptdisk root=/dev/mapper/cryptdisk rootflags=subvol=sv_root rw
+"
+
+Пересобираем ядро
+mkinitcpio -p linux
+
+Задаем пароль рут
+passwd
+
+Создаем  пользователя и задаем пароль
+useradd -m -g users -G adm,storage,wheel,power,audio,video -s /bin/bash qapfuc
+passwd qapfuc
+
+Вписываем своего пользователя
+EDITOR=vim visudo
+
+Раскоминтируем два языка русский и английский в двух форматах и сгенерируем локали
+vim /etc/locale.gen
+locale-gen
+
+Включаем сервисы
+systemctl enable dhcpcd.service NetworkManager gdm.service
+
+Выходим и загружаемся в чистую систему
+exit 
+reboot
