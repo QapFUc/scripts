@@ -9,7 +9,7 @@ sudo pacman -R gnome-boxes cheese epiphany gnome-weather
 sudo pacman -Syyuu
 sudo pacman -S amd-ucode
 sudo pacman -S intel-ucode
-sudo pacman -S android-udev cmake gcc
+sudo pacman -S android-udev cmake gcc arduino
 sudo pacman -S nvidia
 sudo pacman -S pipewire pipewire-pulse pipewire-jack gnome-bluetooth gnome-tweaks 
 sudo pacman -S wine wine-mono wine-gecko
@@ -26,6 +26,7 @@ sudo pacman -S steam
 
 echo "You wish install Apps from aur? If no press Ctrl + C"
 read m
+cd
 mkdir ~/GITApps
 cd GITApps
 git clone https://aur.archlinux.org/gdm-prime.git
