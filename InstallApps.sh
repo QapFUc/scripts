@@ -93,10 +93,12 @@ cd onlyoffice-bin
 makepkg -sri
 cd
 cd GITApps
-git clone https://aur.archlinux.org/protonvpn-gui.git
-cd protonvpn-gui
+git clone https://aur.archlinux.org/paru.git
+cd paru
 makepkg -sri
 cd
+paru -S protonvpn
+
 
 
 
