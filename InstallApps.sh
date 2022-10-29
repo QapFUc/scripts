@@ -92,3 +92,11 @@ git clone https://aur.archlinux.org/onlyoffice-bin.git
 cd onlyoffice-bin
 makepkg -sri
 cd
+cd GITApps
+git clone https://aur.archlinux.org/protonvpn-gui.git
+cd onlyoffice-bin
+makepkg -sri
+cd
+
+
+
