@@ -98,6 +98,11 @@ cd paru
 makepkg -sri
 cd
 paru -S protonvpn
+cd GITApps
+git clone https://aur.archlinux.org/clion.git
+cd clion
+makepkg -sri
+cd
 
 
 
