@@ -94,7 +94,7 @@ makepkg -sri
 cd
 cd GITApps
 git clone https://aur.archlinux.org/protonvpn-gui.git
-cd onlyoffice-bin
+cd protonvpn-gui
 makepkg -sri
 cd
 
