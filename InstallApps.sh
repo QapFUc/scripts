@@ -9,7 +9,7 @@ sudo pacman -R gnome-boxes cheese epiphany gnome-weather
 sudo pacman -Syyuu
 sudo pacman -S amd-ucode
 sudo pacman -S intel-ucode
-sudo pacman -S android-udev cmake gcc arduino
+sudo pacman -S android-udev cmake gcc arduino jre8-openjdk
 sudo pacman -S nvidia
 sudo pacman -S pipewire pipewire-pulse pipewire-jack gnome-bluetooth gnome-tweaks 
 sudo pacman -S wine wine-mono wine-gecko
