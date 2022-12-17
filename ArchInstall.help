@@ -15,7 +15,7 @@ mkfs.vfar /dev/sda1
 mkfs.btrfs -f /dev/mapper/cryptdisk
 
 Монтируем диски и создаем сабволюмы
-mount /dev/mapper/cryptdisk /mn
+mount /dev/mapper/cryptdisk /mnt
 btrfs subvolume create /mnt/sv_root
 btrfs subvolume create /mnt/sv_home
 umount -R /mnt
@@ -25,8 +25,8 @@ mkdir /mnt/home
 mount /dev/sda1 /mnt/boot
 mount -o subvol=sv_home,compress-lzo,ssd,autodefrag /dev/mapper/cryptdisk /mnt/home
 
-Создаем базовую систему (xorg gnome firefox ставить не обязательно можно использовать аналоги)
-pacstrap /mnt base base-devel linux linux-firmware dhcpcd networkmanager mesa-demos btfs-progs sudo p7zip git vim xorg gnome firefox
+Создаем базовую систему (xorg firefox ставить не обязательно можно использовать аналоги)
+pacstrap /mnt base base-devel linux linux-firmware dhcpcd networkmanager mesa-demos btfs-progs sudo p7zip git vim xorg firefox
 genfstab -U /mnt >> /mnt/etc/fstab
 
 arch-chroot /mnt
@@ -53,6 +53,7 @@ vim /boot/loader/entries/arch.conf
 "
 title Arch
 linux /vmlinuz-linux
+initrd /intel-ucode.img or /amd-ucode.img
 initrd /initramfs-linux.img
 options cryptdevice=UUID=ВАШ_UUID:cryptdisk root=/dev/mapper/cryptdisk rootflags=subvol=sv_root rw
 "
