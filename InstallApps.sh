@@ -5,19 +5,25 @@ sudo pacman -S archlinux-keyring
 sudo pacman -Syu
 sudo pacman -S reflector rsync curl
 sudo reflector --verbose --country 'Germany' -l 25 --sort rate --save /etc/pacman.d/mirrorlist
-sudo pacman -R gnome-boxes cheese epiphany gnome-weather
 sudo pacman -Syyuu
+sudo pacman -S dbus-broker
+sudo systemctl enable dbus-broker.service
+sudo systemctl disable dbus.service
+sudo pacman -S evince
 sudo pacman -S amd-ucode
 sudo pacman -S intel-ucode
 sudo pacman -S android-udev cmake gcc arduino jre8-openjdk
 sudo pacman -S nvidia
-sudo pacman -S pipewire pipewire-pulse pipewire-jack gnome-bluetooth gnome-tweaks 
+sudo pacman -S texlive-most textlive-lang
+sudo pacman -S pipewire pipewire-pulse pipewire-jack gnome-bluetooth gnome-tweaks
+sudo pacman -S gnome-shell gnome-console gnome-tweak-tool gnome-control-center gdm gnome-keyring nautilus file-roller gnome-text-editor gnome-calculator
+sudo pacman -S dconf-editor login-manager-settings 
 sudo pacman -S wine wine-mono wine-gecko
-sudo pacman -S rclone fish neofetch scrcpy htop
+sudo pacman -S rclone fish neofetch scrcpy htop btop
 sudo chsh -s /usr/bin/fish
 chsh -s /usr/bin/fish
 sudo systemctl enable bluetooth.service 
-sudo pacman -S qbittorrent
+sudo pacman -S qbittorrent bitwarden
 sudo pacman -S vlc audacity
 sudo pacman -S telegram-desktop thunderbird discord
 sudo pacman -S blender inkscape kdenlive krita gimp obs-studio
@@ -37,7 +43,7 @@ cd GITApps
 git clone https://aur.archlinux.org/optimus-manager.git 
 cd optimus-manager
 makepkg -sri
-sudo echo "WaylandEnable=false" >> /etc/gdm/custom.conf
+echo "WaylandEnable=false" >> /etc/gdm/custom.conf
 cd
 cd GITApps
 git clone https://aur.archlinux.org/gnome-browser-connector.git 
@@ -65,11 +71,6 @@ cd GITApps
 gpg --recv-keys 5E3C45D7B312C643
 git clone https://aur.archlinux.org/spotify.git
 cd spotify
-makepkg -sri
-cd
-cd GITApps
-git clone https://aur.archlinux.org/enpass-bin.git
-cd enpass-bin
 makepkg -sri
 cd
 cd GITApps
