@@ -1,0 +1,34 @@
+#! /bin/sh
+
+
+start() {
+	/usr/local/share/panasonic/scanner/bin/PanasonicMFSlpd &
+}
+
+stop() {
+	killall PanasonicMFSlpd
+	echo
+}
+
+restart() {
+	stop
+	start
+}
+
+case "$1" in
+  start)
+	start
+	;;
+  stop) 
+	stop
+	;;
+  restart|force-reload)
+	restart
+	;;
+  *)
+	echo $"Usage: $0 {start|stop|status|restart|reload|force-reload|condrestart}"
+	exit 1
+esac
+
+
+exit 0

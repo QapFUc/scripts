@@ -10,6 +10,17 @@ sudo pacman -S dbus-broker
 sudo systemctl enable dbus-broker.service
 sudo systemctl disable dbus.service
 sudo pacman -S evince
+sudo pacman -S cups
+sudo systemctl enable cups.service
+sudo systemctl start cups.service
+cd driver/mccgdi-2.0.10-x86_64/
+sudo ./install-driver
+sudo pacman -S system-config-printer
+cd ../
+cd ./panamfs-scan-1.3.1-x86_64/
+sudo ./install-driver
+cd ../
+cd ../
 sudo pacman -S amd-ucode
 sudo pacman -S intel-ucode
 sudo pacman -S android-udev cmake gcc arduino jre8-openjdk

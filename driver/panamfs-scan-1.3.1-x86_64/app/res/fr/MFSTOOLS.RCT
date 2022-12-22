@@ -1,0 +1,46 @@
+﻿[Main]
+Version=1
+
+[dlg100]
+10=Panasonic MFS Tools
+
+[dlg101]
+111=Général
+113=Numérisation
+114=Enregistrer vers:
+116=Parcourir...
+119=Paramètres de ROC
+121=Chemin de ROC:
+123=Parcourir...
+124=Sélectionnez une application ROC
+125=Sélectionnez un dossier d'enregistrement des fichiers numérisés.
+126=Chemin d’application ROC invalide.
+127=Le chemin spécifié n'existe pas.
+
+[dlg102]
+211=Réseau
+212=Liste des noms des ordinateurs sur l'appareil
+213=Liste des noms des ordinateurs sur l'appareil
+214=Nom de l'ordinateur:
+215=Configurer un périphérique réseau
+216=Nom de modèle
+217=Nom de l'appareil
+218=Adresse IP
+219=Recherche
+220=Configuration...
+
+[dlg103]
+311=Recherche en cours des périphériques en ligne...
+
+
+[Message]
+1000=Logiciel de numérisation sélective pour appareil multifonction Panasonic
+1001=Numérisation sélective échouée sur appareil multifonction Panasonic.
+1002=Application Open Error.
+1003=Le chemin spécifié n'existe pas.
+1004=Chemin d’application ROC invalide.
+1005=Scanned file path:
+1006=Error: Invalid parameters.
+1007=Cloud n'est pas suppporté.
+1008=Taille mixte n'est pas suppporté.
+

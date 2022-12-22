@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+Type=Application
+Exec=/usr/local/share/panasonic/scanner/bin/PanasonicMFSpushd
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=.desktop
+Name=pushscan
+Comment[en_US]=Panasonic PushScan Server
+Comment=Panasonic PushScan Server

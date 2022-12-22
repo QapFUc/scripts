@@ -1,0 +1,270 @@
+*PPD-Adobe: "4.3"
+*%
+*% Create By Panasonic 
+*%
+*FormatVersion: "4.3"
+*FileVersion: "Ver.2.0.4"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "L_Panasonic-MB2081N-gdi.ppd"
+*Manufacturer: "Panasonic"
+*Product: "(KX-MB2081N)"
+*ModelName: "Panasonic KX-MB2081N"
+*ShortNickName: "Panasonic KX-MB2081N"
+*NickName: "Panasonic KX-MB2081N GDI"
+*PSVersion: "(3010.000) 550"
+*PSVersion: "(3010.000) 651"
+*PSVersion: "(3010.000) 652"
+*PSVersion: "(3010.000) 653"
+*PSVersion: "(3010.000) 704"
+*PSVersion: "(3010.000) 705"
+*PSVersion: "(3010.000) 800"
+*LanguageLevel: "3"
+*ColorDevice: False
+*DefaultColorSpace: RGB
+*FileSystem: False
+*Throughput: "24"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*cupsVersion: 1.2
+*cupsManualCopies: False
+*cupsLanguages: "en ja"
+
+*cupsFilter: "application/vnd.cups-postscript 0 L_H0JDGCZAZ"
+
+*PanasonicAttr Utility: PanUtility
+*PanasonicAttr SPCFILE: L_IWJD.SPC
+*PanasonicAttr LIBJBIG: L_H0JDJCZAZ
+*PanasonicAttr PMODELNAME: MB2081N
+
+*VariablePaperSize: False
+
+*OpenGroup: General/General
+
+*OpenUI *PageSize/Page Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: Letter
+*PageSize Letter/Letter 8.50 x 11.00 in: "<</PageSize[612 792]/ImagingBBox null>>setpagedevice %% ID=1"
+*PageSize Legal/Legal 8.50 x 14.00 in: "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice %% ID=5"
+*PageSize A4/A4 210.0 x 297.0 mm: "<</PageSize[595 842]/ImagingBBox null>>setpagedevice %% ID=9"
+*PageSize A5/A5 148.0 x 210.0 mm: "<</PageSize[420 595]/ImagingBBox null>>setpagedevice %% ID=11"
+*PageSize B5/B5 (JIS) 182.0 x 257.0 mm: "<</PageSize[516 729]/ImagingBBox null>>setpagedevice %% ID=13"
+*PageSize ISOB5/B5 (ISO) 176.0 x 250.0 mm: "<</PageSize[499 709]/ImagingBBox null>>setpagedevice %% ID=258"
+*PageSize 85x13/216x330 216.0 x 330.0 mm: "<</PageSize[612 936]/ImagingBBox null>>setpagedevice %% ID=14"
+*PageSize 85x134/216x340 216.0 x 340.0 mm: "<</PageSize[612 964]/ImagingBBox null>>setpagedevice %% ID=271"
+*PageSize Env10/Envelope #10 4.12 x 9.50 in: "<</PageSize[297 684]/ImagingBBox null>>setpagedevice %% ID=20"
+*PageSize EnvDL/Envelope DL 110.0 x 220.0 mm: "<</PageSize[312 624]/ImagingBBox null>>setpagedevice %% ID=27"
+*PageSize Youkei4gou/Japanese Envelope You #4 105.0 x 235.0 mm: "<</PageSize[298 666]/ImagingBBox null>>setpagedevice %% ID=91"
+*PageSize Choukei3gou/Japanese Envelope Chou #3 120.0 x 235.0 mm: "<</PageSize[340 666]/ImagingBBox null>>setpagedevice %% ID=73"
+*PageSize Choukei4gou/Japanese Envelope Chou #4 90.0 x 205.0 mm: "<</PageSize[256 581]/ImagingBBox null>>setpagedevice %% ID=74"
+*PageSize Hagaki/Japanese Postcard 100.0 x 148.0mm: "<</PageSize[283 420]/ImagingBBox null>>setpagedevice %% ID=43"
+
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: Letter
+*PageRegion Letter/Letter 8.50 x 11.00 in: "<</PageSize[612 792]/ImagingBBox null>>setpagedevice %% ID=1"
+*PageRegion Legal/Legal 8.50 x 14.00 in: "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice %% ID=5"
+*PageRegion A4/A4 210.0 x 297.0 mm: "<</PageSize[595 842]/ImagingBBox null>>setpagedevice %% ID=9"
+*PageRegion A5/A5 148.0 x 210.0 mm: "<</PageSize[420 595]/ImagingBBox null>>setpagedevice %% ID=11"
+*PageRegion B5/B5 (JIS) 182.0 x 257.0 mm: "<</PageSize[516 729]/ImagingBBox null>>setpagedevice %% ID=13"
+*PageRegion ISOB5/B5 (ISO) 176.0 x 250.0 mm: "<</PageSize[499 709]/ImagingBBox null>>setpagedevice %% ID=258"
+*PageRegion 85x13/216x330 216.0 x 330.0 mm: "<</PageSize[612 936]/ImagingBBox null>>setpagedevice %% ID=14"
+*PageRegion 85x134/216x340 216.0 x 340.0 mm: "<</PageSize[612 964]/ImagingBBox null>>setpagedevice %% ID=271"
+*PageRegion Env10/Envelope #10 4.12 x 9.50 in: "<</PageSize[297 684]/ImagingBBox null>>setpagedevice %% ID=20"
+*PageRegion EnvDL/Envelope DL 110.0 x 220.0 mm: "<</PageSize[312 624]/ImagingBBox null>>setpagedevice %% ID=27"
+*PageRegion Youkei4gou/Japanese Envelope You #4 105.0 x 235.0 mm: "<</PageSize[298 666]/ImagingBBox null>>setpagedevice %% ID=91"
+*PageRegion Choukei3gou/Japanese Envelope Chou #3 120.0 x 235.0 mm: "<</PageSize[340 666]/ImagingBBox null>>setpagedevice %% ID=73"
+*PageRegion Choukei4gou/Japanese Envelope Chou #4 90.0 x 205.0 mm: "<</PageSize[256 581]/ImagingBBox null>>setpagedevice %% ID=74"
+*PageRegion Hagaki/Japanese Postcard 100.0 x 148.0mm: "<</PageSize[283 420]/ImagingBBox null>>setpagedevice %% ID=43"
+
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: Letter
+*ImageableArea Letter/Letter 8.50 x 11.00 in: "12 12 600 780"
+*ImageableArea Legal/Legal 8.50 x 14.00 in: "12 12 600 996"
+*ImageableArea A4/A4 210.0 x 297.0 mm: "12 12 583 830"
+*ImageableArea A5/A5 148.0 x 210.0 mm: "12 12 408 583"
+*ImageableArea B5/B5 (JIS) 182.0 x 257.0 mm: "12 12 504 717"
+*ImageableArea ISOB5/B5 (ISO) 176.0 x 250.0 mm: "12 12 487 697"
+*ImageableArea 85x13/216x330 216.0 x 330.0 mm: "12 12 600 924"
+*ImageableArea 85x134/216x340 216.0 x 340.0 mm: "12 12 600 952"
+*ImageableArea Env10/Envelope #10 4.12 x 9.50 in: "12 12 285 672"
+*ImageableArea EnvDL/Envelope DL 110.0 x 220.0 mm: "12 12 300 612"
+*ImageableArea Youkei4gou/Japanese Envelope You #4 105.0 x 235.0 mm: "12 12 286 654"
+*ImageableArea Choukei3gou/Japanese Envelope Chou #3 120.0 x 235.0 mm: "12 12 328 654" 
+*ImageableArea Choukei4gou/Japanese Envelope Chou #4 90.0 x 205.0 mm: "12 12 244 569"
+*ImageableArea Hagaki/Japanese Postcard 100.0 x 148.0mm: "12 12 271 408"
+
+
+*DefaultPaperDimension: Letter
+*PaperDimension Letter/Letter 8.50 x 11.00 in: "612 792"
+*PaperDimension Legal/Legal 8.50 x 14.00 in: "612 1008"
+*PaperDimension A4/A4 210.0 x 297.0 mm: "595 842"
+*PaperDimension A5/A5 148.0 x 210.0 mm: "420 595"
+*PaperDimension B5/B5 (JIS) 182.0 x 257.0 mm: "516 729"
+*PaperDimension ISOB5/B5 (ISO) 176.0 x 250.0 mm: "499 709"
+*PaperDimension 85x13/216x330 216.0 x 330.0 mm: "612 936"
+*PaperDimension 85x134/216x340 216.0 x 340.0 mm: "612 964"
+*PaperDimension Env10/Envelope #10 4.12 x 9.50 in: "297 684"
+*PaperDimension EnvDL/Envelope DL 110.0 x 220.0 mm: "312 624"
+*PaperDimension Youkei4gou/Japanese Envelope You #4 105.0 x 235.0 mm: "298 666"
+*PaperDimension Choukei3gou/Japanese Envelope Chou #3 120.0 x 235.0 mm: "340 666" 
+*PaperDimension Choukei4gou/Japanese Envelope Chou #4 90.0 x 205.0 mm: "256 581"
+*PaperDimension Hagaki/Japanese Postcard 100.0 x 148.0mm: "283 420"
+
+*OpenUI *MediaType/Media Type: PickOne
+*OrderDependency: 50 AnySetup *MediaType
+*DefaultMediaType: ThinPaper
+*MediaType Plain/Plain Paper 2: "%% ID=1"
+*MediaType ThinPaper/Plain Paper 1: "%% ID=262"
+*MediaType Labels/Label: "%% ID=258"
+*MediaType Envelope/Envelope: "%% ID=260"
+*MediaType Hagaki/Japanese Postcard: "%% ID=268"
+*CloseUI: *MediaType
+
+*OpenUI *InputSlot/Paper Source: PickOne
+*OrderDependency: 60 AnySetup *InputSlot
+*DefaultInputSlot: Tray1
+*InputSlot Tray1/Input Tray (#1): "%% ID=1"
+*InputSlot Manual/Manual Tray (#2): "%% ID=4"
+*CloseUI: *InputSlot
+
+*OpenUI *Poster/Poster: PickOne
+*OrderDependency: 180 AnySetup *Poster
+*DefaultPoster: None
+*Poster None/None: "%% ID=0"
+*Poster 1x2/1x2: "%% ID=1"
+*Poster 2x2/2x2: "%% ID=2"
+*Poster 3x3/3x3: "%% ID=3"
+*Poster 4x4/4x4: "%% ID=4"
+*CloseUI: *Poster
+
+*CloseGroup: General
+
+*OpenGroup: Output/Output
+
+*OpenUI *Collate/Collate: Boolean
+*OrderDependency: 200 AnySetup *Collate
+*DefaultCollate: True
+*Collate True/True: "%%"
+*Collate False/False: "%%"
+*CloseUI: *Collate
+
+*CloseGroup: Output
+
+*OpenGroup: Quality/Quality
+
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 410 AnySetup *Resolution
+*DefaultResolution: Standard
+*Resolution Draft/Draft: "<</HWResolution[300 300]>>setpagedevice %% ID=1"
+*Resolution Standard/Standard: "<</HWResolution[600 600]>>setpagedevice %% ID=2"
+*CloseUI: *Resolution
+
+*OpenUI *TonerSave/Toner Save: Boolean
+*OrderDependency: 440 AnySetup *TonerSave
+*DefaultTonerSave: False
+*TonerSave True/True: "%% ID=1"
+*TonerSave False/False: "%% ID=0"
+*CloseUI: *TonerSave
+
+*%%OpenUI *TextAsBlack/Print All Text As Black: Boolean
+*%%OrderDependency: 450 AnySetup *TextAsBlack
+*%%DefaultTextAsBlack: False
+*%%TextAsBlack True/True: "%%"
+*%%TextAsBlack False/False: "%%"
+*%%CloseUI: *TextAsBlack
+
+*CloseGroup: Quality
+
+
+*ja.Translation General/基本: ""
+*ja.Translation PageSize/原稿サイズ: ""
+*ja.PageSize Letter/レター 8.50 x 11.00 インチ: ""
+*ja.PageSize Legal/リーガル 8.50 x 14.00 インチ: ""
+*ja.PageSize A4/A4 210.0 x 297.0 ミリ: ""
+*ja.PageSize A5/A5 148.0 x 210.0 ミリ: ""
+*ja.PageSize B5/B5 (JIS) 182.0 x 257.0 ミリ: ""
+*ja.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 ミリ: ""
+*ja.PageSize 85x13/216x330 216.0 x 330.0 ミリ: ""
+*ja.PageSize 85x134/216x340 216.0 x 340.0 ミリ: ""
+*ja.PageSize Env10/封筒 COM-10 4.12 x 9.50 インチ: "297 684"
+*ja.PageSize EnvDL/封筒 DL 110.0 x 220.0 ミリ: "312 624"
+*ja.PageSize Youkei4gou/封筒 洋形４号 105.0 x 235.0 ミリ: ""
+*ja.PageSize Choukei3gou/封筒 長形３号 120.0 x 235.0 ミリ: "" 
+*ja.PageSize Choukei4gou/封筒 長形４号 90.0 x 205.0 ミリ: ""
+*ja.PageSize Hagaki/はがき 100.0 x 148.0 ミリ: ""
+*ja.Translation InputSlot/給紙方法: ""
+*ja.InputSlot Tray1/トレイ１: ""
+*ja.InputSlot Manual/手差しトレイ: ""
+*ja.Translation MediaType/用紙の種類: ""
+*ja.MediaType Plain/厚口普通紙: ""
+*ja.MediaType ThinPaper/普通紙: ""
+*ja.MediaType Envelope/封筒: ""
+*ja.MediaType Hagaki/はがき: ""
+*ja.MediaType Labels/ラベル紙: ""
+*ja.Translation Poster/ポスター印刷: ""
+*ja.Poster None/なし: ""
+*ja.Poster 1x2/1x2: ""
+*ja.Poster 2x2/2x2: ""
+*ja.Poster 3x3/3x3: ""
+*ja.Poster 4x4/4x4: ""
+*ja.Translation Output/出力: ""
+*ja.Translation Collate/部単位: ""
+*ja.Collate True/はい: ""
+*ja.Collate False/いいえ: ""
+*ja.Translation Quality/品質: ""
+*ja.Translation Resolution/品質: ""
+*ja.Resolution Draft/ドラフト: ""
+*ja.Resolution Standard/スタンダード: ""
+*ja.Translation TonerSave/トナーセーブ: ""
+*ja.TonerSave True/はい: ""
+*ja.TonerSave False/いいえ: ""
+*ja.Translation TextAsBlack/色文字を黒で印刷: ""
+*ja.TextAsBlack True/はい: ""
+*ja.TextAsBlack False/いいえ: ""
+*ja.Translation OptionNumberTray/給紙カセット数: ""
+
+*% Generic boilerplate PPD stuff as standard PostScript fonts and so on
+
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Special "(001.004S)" Standard ROM
+*%
+*% End of PPD
+*%

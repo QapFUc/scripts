@@ -1,0 +1,46 @@
+﻿[Main]
+Version=1
+
+[dlg100]
+10=Panasonic MFS Tools
+
+[dlg101]
+111=General
+113=Escanear
+114=Guardar en:
+116=Examinar...
+119=Ajuste de OCR
+121=Ruta de OCR:
+123=Examinar...
+124=Seleccione la aplicación OCR
+125=Seleccione una carpeta en la que guardar los archivos escaneados.
+126=Ruta invalida aplicación OCR.
+127=El puerto especificado no existe.
+
+[dlg102]
+211=Red
+212=Lista de nombres PC en el equipo
+213=Lista de nombres PC en el equipo
+214=Nombre de PC:
+215=Configurar dispositivo de red
+216=Nombre del modelo
+217=Nombre de la máquina
+218=Dirección IP
+219=Buscar
+220=Configurar...
+
+[dlg103]
+311=Dispositivos de búsqueda en línea...
+
+
+[Message]
+1000=Panasonic MFS Escáner(PUSH)
+1001=Fallo en Panasonic MFS Escáner(PUSH).
+1002=Application Open Error.
+1003=El puerto especificado no existe.
+1004=Ruta invalida aplicación OCR.     
+1005=Scanned file path:
+1006=Error: Invalid parameters.
+1007=Nube no se soporta.
+1008=Tamaño combinado no se soporta.
+

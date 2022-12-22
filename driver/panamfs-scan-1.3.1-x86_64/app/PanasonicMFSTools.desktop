@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Panasonic MFS Tools
+Comment=Panasonic MFS Setting Utility
+Exec=/usr/local/share/panasonic/scanner/bin/PanasonicMFSTools
+Icon=/usr/local/share/panasonic/scanner/bin/PanasonicMFSTools.png
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;HardwareSettings;Settings;
+

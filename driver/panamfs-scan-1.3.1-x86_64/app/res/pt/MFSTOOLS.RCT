@@ -1,0 +1,46 @@
+﻿[Main]
+Version=1
+
+[dlg100]
+10=Panasonic MFS Tools
+
+[dlg101]
+111=Geral
+113=Scanner
+114=Salvar em:
+116=Pesquisar...
+119=Configuração do OCR
+121=Caminho do OCR:
+123=Pesquisar...
+124=Selecionar aplicativo OCR
+125=Selecione a pasta de armazenamento dos arquivos escaneados.
+126=Caminho inválido para a aplicativo OCR.
+127=O caminho especificado não existe.
+
+[dlg102]
+211=Rede
+212=Listagem do nome de PC no dispositivo
+213=Listagem do nome de PC no dispositivo
+214=Nome PC:
+215=Configuração de Rede
+216=Nome do modelo
+217=Nome da máquina
+218=Endereço IP
+219=Procurando
+220=Configurar...
+
+[dlg103]
+311=Procurando por dispositivos online...
+
+
+[Message]
+1000=Panasonic MFS Push Scan
+1001=Falha em Panasonic MFS Push Scan.
+1002=Application Open Error.
+1003=O caminho especificado não existe.
+1004=Caminho inválido para a aplicativo OCR.
+1005=Scanned file path:
+1006=Error: Invalid parameters.
+1007=Cloud não é suportado.
+1008=Tamanho misturado não é suportado.
+

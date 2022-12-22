@@ -1,0 +1,815 @@
+# [insert language here] translation for SANE backend options
+# Copyright (C) <year> SANE Project.
+# [name of translator], [insert email address here], [year].
+msgid ""
+msgstr ""
+"Project-Id-Version: sane-panamfs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-05-28 16:16+0800\n"
+"PO-Revision-Date: \n"
+"Last-Translator: [name] [email-address]\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .tmp/panamfs.c:171
+#, no-c-format
+msgid "A4"
+msgstr ""
+
+#: .tmp/panamfs.c:172
+#, no-c-format
+msgid "US Letter"
+msgstr ""
+
+#: .tmp/panamfs.c:173
+#, no-c-format
+msgid "US Legal"
+msgstr ""
+
+#: .tmp/panamfs.c:174
+#, no-c-format
+msgid "B5(ISO)"
+msgstr ""
+
+#: .tmp/panamfs.c:175
+#, no-c-format
+msgid "B5(JIS)"
+msgstr ""
+
+#: .tmp/panamfs.c:176
+#, no-c-format
+msgid "16K"
+msgstr ""
+
+#: .tmp/panamfs.c:177
+#, no-c-format
+msgid "8.5x13"
+msgstr ""
+
+#: .tmp/panamfs.c:178
+#, no-c-format
+msgid "A5"
+msgstr ""
+
+#: .tmp/panamfs.c:179
+#, no-c-format
+msgid "8.5x13.4"
+msgstr ""
+
+#: .tmp/panamfs.c:181
+#, no-c-format
+msgid "User Define"
+msgstr ""
+
+#: .tmp/panamfs.h:208
+#, no-c-format
+msgid "Black & White"
+msgstr ""
+
+#: .tmp/panamfs.h:209 .tmp/saneopts.h:394
+#, no-c-format
+msgid "Gray"
+msgstr ""
+
+#: .tmp/panamfs.h:210 .tmp/saneopts.h:393
+#, no-c-format
+msgid "Color"
+msgstr ""
+
+#: .tmp/panamfs.h:217
+#, no-c-format
+msgid "Duplex"
+msgstr ""
+
+#: .tmp/panamfs.h:218
+#, no-c-format
+msgid "Paper size"
+msgstr ""
+
+#: .tmp/panamfs.h:221
+#, no-c-format
+msgid "Enable Duplex (Dual-Sided) Scanning"
+msgstr ""
+
+#: .tmp/panamfs.h:223
+#, no-c-format
+msgid "Physical size of the paper in the ADF"
+msgstr ""
+
+#: .tmp/panamfs.h:225
+#, no-c-format
+msgid "None"
+msgstr ""
+
+#: .tmp/panamfs.h:226
+#, no-c-format
+msgid "Flip on Long Edge"
+msgstr ""
+
+#: .tmp/panamfs.h:227
+#, no-c-format
+msgid "Flip on Short Edge"
+msgstr ""
+
+#: .tmp/panasonic_net.c:110 .tmp/panasonic_usb.c:2953
+#, no-c-format
+msgid "sheetfed scanner"
+msgstr ""
+
+#: .tmp/panasonic_usb.c:1412 .tmp/panasonic_usb.c:1583
+#: .tmp/panasonic_usb.c:1584
+#, no-c-format
+msgid "Scan Mode"
+msgstr ""
+
+#: .tmp/panasonic_usb.c:1563
+#, no-c-format
+msgid "Enhancement"
+msgstr ""
+
+#: .tmp/panasonic_usb.c:1573
+#, no-c-format
+msgid "Geometry"
+msgstr ""
+
+#: .tmp/saneopts.h:134
+#, no-c-format
+msgid "Number of options"
+msgstr ""
+
+#: .tmp/saneopts.h:135
+#, no-c-format
+msgid "Preview"
+msgstr ""
+
+#: .tmp/saneopts.h:136
+#, no-c-format
+msgid "Force monochrome preview"
+msgstr ""
+
+#: .tmp/saneopts.h:137
+#, no-c-format
+msgid "Bit depth"
+msgstr ""
+
+#: .tmp/saneopts.h:138
+#, no-c-format
+msgid "Scan mode"
+msgstr ""
+
+#: .tmp/saneopts.h:139
+#, no-c-format
+msgid "Scan speed"
+msgstr ""
+
+#: .tmp/saneopts.h:140
+#, no-c-format
+msgid "Scan source"
+msgstr ""
+
+#: .tmp/saneopts.h:141
+#, no-c-format
+msgid "Force backtracking"
+msgstr ""
+
+#: .tmp/saneopts.h:142
+#, no-c-format
+msgid "Top-left x"
+msgstr ""
+
+#: .tmp/saneopts.h:143
+#, no-c-format
+msgid "Top-left y"
+msgstr ""
+
+#: .tmp/saneopts.h:144
+#, no-c-format
+msgid "Bottom-right x"
+msgstr ""
+
+#: .tmp/saneopts.h:145
+#, no-c-format
+msgid "Bottom-right y"
+msgstr ""
+
+#: .tmp/saneopts.h:146
+#, no-c-format
+msgid "Scan resolution"
+msgstr ""
+
+#: .tmp/saneopts.h:147
+#, no-c-format
+msgid "X-resolution"
+msgstr ""
+
+#: .tmp/saneopts.h:148
+#, no-c-format
+msgid "Y-resolution"
+msgstr ""
+
+#: .tmp/saneopts.h:149
+#, no-c-format
+msgid "Use custom gamma table"
+msgstr ""
+
+#: .tmp/saneopts.h:150
+#, no-c-format
+msgid "Image intensity"
+msgstr ""
+
+#: .tmp/saneopts.h:151
+#, no-c-format
+msgid "Red intensity"
+msgstr ""
+
+#: .tmp/saneopts.h:152
+#, no-c-format
+msgid "Green intensity"
+msgstr ""
+
+#: .tmp/saneopts.h:153
+#, no-c-format
+msgid "Blue intensity"
+msgstr ""
+
+#: .tmp/saneopts.h:154
+#, no-c-format
+msgid "Brightness"
+msgstr ""
+
+#: .tmp/saneopts.h:155
+#, no-c-format
+msgid "Contrast"
+msgstr ""
+
+#: .tmp/saneopts.h:156
+#, no-c-format
+msgid "Grain size"
+msgstr ""
+
+#: .tmp/saneopts.h:157
+#, no-c-format
+msgid "Halftoning"
+msgstr ""
+
+#: .tmp/saneopts.h:158
+#, no-c-format
+msgid "Black level"
+msgstr ""
+
+#: .tmp/saneopts.h:159
+#, no-c-format
+msgid "White level"
+msgstr ""
+
+#: .tmp/saneopts.h:160
+#, no-c-format
+msgid "White level for red"
+msgstr ""
+
+#: .tmp/saneopts.h:161
+#, no-c-format
+msgid "White level for green"
+msgstr ""
+
+#: .tmp/saneopts.h:162
+#, no-c-format
+msgid "White level for blue"
+msgstr ""
+
+#: .tmp/saneopts.h:163
+#, no-c-format
+msgid "Shadow"
+msgstr ""
+
+#: .tmp/saneopts.h:164
+#, no-c-format
+msgid "Shadow for red"
+msgstr ""
+
+#: .tmp/saneopts.h:165
+#, no-c-format
+msgid "Shadow for green"
+msgstr ""
+
+#: .tmp/saneopts.h:166
+#, no-c-format
+msgid "Shadow for blue"
+msgstr ""
+
+#: .tmp/saneopts.h:167
+#, no-c-format
+msgid "Highlight"
+msgstr ""
+
+#: .tmp/saneopts.h:168
+#, no-c-format
+msgid "Highlight for red"
+msgstr ""
+
+#: .tmp/saneopts.h:169
+#, no-c-format
+msgid "Highlight for green"
+msgstr ""
+
+#: .tmp/saneopts.h:170
+#, no-c-format
+msgid "Highlight for blue"
+msgstr ""
+
+#: .tmp/saneopts.h:171
+#, no-c-format
+msgid "Hue"
+msgstr ""
+
+#: .tmp/saneopts.h:172
+#, no-c-format
+msgid "Saturation"
+msgstr ""
+
+#: .tmp/saneopts.h:173
+#, no-c-format
+msgid "Filename"
+msgstr ""
+
+#: .tmp/saneopts.h:174
+#, no-c-format
+msgid "Halftone pattern size"
+msgstr ""
+
+#: .tmp/saneopts.h:175
+#, no-c-format
+msgid "Halftone pattern"
+msgstr ""
+
+#: .tmp/saneopts.h:176
+#, no-c-format
+msgid "Bind X and Y resolution"
+msgstr ""
+
+#: .tmp/saneopts.h:177
+#, no-c-format
+msgid "Negative"
+msgstr ""
+
+#: .tmp/saneopts.h:178
+#, no-c-format
+msgid "Quality calibration"
+msgstr ""
+
+#: .tmp/saneopts.h:179
+#, no-c-format
+msgid "Double Optical Resolution"
+msgstr ""
+
+#: .tmp/saneopts.h:180
+#, no-c-format
+msgid "Bind RGB"
+msgstr ""
+
+#: .tmp/saneopts.h:181
+#, no-c-format
+msgid "Threshold"
+msgstr ""
+
+#: .tmp/saneopts.h:182
+#, no-c-format
+msgid "Analog gamma correction"
+msgstr ""
+
+#: .tmp/saneopts.h:183
+#, no-c-format
+msgid "Analog gamma red"
+msgstr ""
+
+#: .tmp/saneopts.h:184
+#, no-c-format
+msgid "Analog gamma green"
+msgstr ""
+
+#: .tmp/saneopts.h:185
+#, no-c-format
+msgid "Analog gamma blue"
+msgstr ""
+
+#: .tmp/saneopts.h:186
+#, no-c-format
+msgid "Bind analog gamma"
+msgstr ""
+
+#: .tmp/saneopts.h:187
+#, no-c-format
+msgid "Warmup lamp"
+msgstr ""
+
+#: .tmp/saneopts.h:188
+#, no-c-format
+msgid "Cal. exposure-time"
+msgstr ""
+
+#: .tmp/saneopts.h:189
+#, no-c-format
+msgid "Cal. exposure-time for red"
+msgstr ""
+
+#: .tmp/saneopts.h:190
+#, no-c-format
+msgid "Cal. exposure-time for green"
+msgstr ""
+
+#: .tmp/saneopts.h:192
+#, no-c-format
+msgid "Cal. exposure-time for blue"
+msgstr ""
+
+#: .tmp/saneopts.h:193
+#, no-c-format
+msgid "Scan exposure-time"
+msgstr ""
+
+#: .tmp/saneopts.h:194
+#, no-c-format
+msgid "Scan exposure-time for red"
+msgstr ""
+
+#: .tmp/saneopts.h:195
+#, no-c-format
+msgid "Scan exposure-time for green"
+msgstr ""
+
+#: .tmp/saneopts.h:197
+#, no-c-format
+msgid "Scan exposure-time for blue"
+msgstr ""
+
+#: .tmp/saneopts.h:198
+#, no-c-format
+msgid "Set exposure-time"
+msgstr ""
+
+#: .tmp/saneopts.h:199
+#, no-c-format
+msgid "Cal. lamp density"
+msgstr ""
+
+#: .tmp/saneopts.h:200
+#, no-c-format
+msgid "Scan lamp density"
+msgstr ""
+
+#: .tmp/saneopts.h:201
+#, no-c-format
+msgid "Set lamp density"
+msgstr ""
+
+#: .tmp/saneopts.h:202
+#, no-c-format
+msgid "Lamp off at exit"
+msgstr ""
+
+#: .tmp/saneopts.h:206
+#, no-c-format
+msgid ""
+"Read-only option that specifies how many options a specific devices "
+"supports."
+msgstr ""
+
+#: .tmp/saneopts.h:210
+#, no-c-format
+msgid "Request a preview-quality scan."
+msgstr ""
+
+#: .tmp/saneopts.h:213
+#, no-c-format
+msgid ""
+"Request that all previews are done in monochrome mode.  On a three-pass "
+"scanner this cuts down the number of passes to one and on a one-pass "
+"scanner, it reduces the memory requirements and scan-time of the preview."
+msgstr ""
+
+#: .tmp/saneopts.h:219
+#, no-c-format
+msgid ""
+"Number of bits per sample, typical values are 1 for \"line-art\" and 8 "
+"for multibit scans."
+msgstr ""
+
+#: .tmp/saneopts.h:223
+#, no-c-format
+msgid "Selects the scan mode (e.g., lineart, monochrome, or color)."
+msgstr ""
+
+#: .tmp/saneopts.h:226
+#, no-c-format
+msgid "Determines the speed at which the scan proceeds."
+msgstr ""
+
+#: .tmp/saneopts.h:229
+#, no-c-format
+msgid "Selects the scan source (such as a document-feeder)."
+msgstr ""
+
+#: .tmp/saneopts.h:232
+#, no-c-format
+msgid "Controls whether backtracking is forced."
+msgstr ""
+
+#: .tmp/saneopts.h:235
+#, no-c-format
+msgid "Top-left x position of scan area."
+msgstr ""
+
+#: .tmp/saneopts.h:238
+#, no-c-format
+msgid "Top-left y position of scan area."
+msgstr ""
+
+#: .tmp/saneopts.h:241
+#, no-c-format
+msgid "Bottom-right x position of scan area."
+msgstr ""
+
+#: .tmp/saneopts.h:244
+#, no-c-format
+msgid "Bottom-right y position of scan area."
+msgstr ""
+
+#: .tmp/saneopts.h:247
+#, no-c-format
+msgid "Sets the resolution of the scanned image."
+msgstr ""
+
+#: .tmp/saneopts.h:250
+#, no-c-format
+msgid "Sets the horizontal resolution of the scanned image."
+msgstr ""
+
+#: .tmp/saneopts.h:253
+#, no-c-format
+msgid "Sets the vertical resolution of the scanned image."
+msgstr ""
+
+#: .tmp/saneopts.h:256
+#, no-c-format
+msgid ""
+"Determines whether a builtin or a custom gamma-table should be used."
+msgstr ""
+
+#: .tmp/saneopts.h:260
+#, no-c-format
+msgid ""
+"Gamma-correction table.  In color mode this option equally affects the "
+"red, green, and blue channels simultaneously (i.e., it is an intensity "
+"gamma table)."
+msgstr ""
+
+#: .tmp/saneopts.h:265
+#, no-c-format
+msgid "Gamma-correction table for the red band."
+msgstr ""
+
+#: .tmp/saneopts.h:268
+#, no-c-format
+msgid "Gamma-correction table for the green band."
+msgstr ""
+
+#: .tmp/saneopts.h:271
+#, no-c-format
+msgid "Gamma-correction table for the blue band."
+msgstr ""
+
+#: .tmp/saneopts.h:274
+#, no-c-format
+msgid "Controls the brightness of the acquired image."
+msgstr ""
+
+#: .tmp/saneopts.h:277
+#, no-c-format
+msgid "Controls the contrast of the acquired image."
+msgstr ""
+
+#: .tmp/saneopts.h:280
+#, no-c-format
+msgid ""
+"Selects the \"graininess\" of the acquired image.  Smaller values result "
+"in sharper images."
+msgstr ""
+
+#: .tmp/saneopts.h:284
+#, no-c-format
+msgid "Selects whether the acquired image should be halftoned (dithered)."
+msgstr ""
+
+#: .tmp/saneopts.h:287 .tmp/saneopts.h:302
+#, no-c-format
+msgid "Selects what radiance level should be considered \"black\"."
+msgstr ""
+
+#: .tmp/saneopts.h:290 .tmp/saneopts.h:311
+#, no-c-format
+msgid "Selects what radiance level should be considered \"white\"."
+msgstr ""
+
+#: .tmp/saneopts.h:293
+#, no-c-format
+msgid "Selects what red radiance level should be considered \"white\"."
+msgstr ""
+
+#: .tmp/saneopts.h:296
+#, no-c-format
+msgid "Selects what green radiance level should be considered \"white\"."
+msgstr ""
+
+#: .tmp/saneopts.h:299
+#, no-c-format
+msgid "Selects what blue radiance level should be considered \"white\"."
+msgstr ""
+
+#: .tmp/saneopts.h:304
+#, no-c-format
+msgid "Selects what red radiance level should be considered \"black\"."
+msgstr ""
+
+#: .tmp/saneopts.h:306
+#, no-c-format
+msgid "Selects what green radiance level should be considered \"black\"."
+msgstr ""
+
+#: .tmp/saneopts.h:308
+#, no-c-format
+msgid "Selects what blue radiance level should be considered \"black\"."
+msgstr ""
+
+#: .tmp/saneopts.h:313
+#, no-c-format
+msgid "Selects what red radiance level should be considered \"full red\"."
+msgstr ""
+
+#: .tmp/saneopts.h:315
+#, no-c-format
+msgid ""
+"Selects what green radiance level should be considered \"full green\"."
+msgstr ""
+
+#: .tmp/saneopts.h:318
+#, no-c-format
+msgid ""
+"Selects what blue radiance level should be considered \"full blue\"."
+msgstr ""
+
+#: .tmp/saneopts.h:322
+#, no-c-format
+msgid "Controls the \"hue\" (blue-level) of the acquired image."
+msgstr ""
+
+#: .tmp/saneopts.h:325
+#, no-c-format
+msgid ""
+"The saturation level controls the amount of \"blooming\" that occurs "
+"when acquiring an image with a camera. Larger values cause more blooming."
+msgstr ""
+
+#: .tmp/saneopts.h:330
+#, no-c-format
+msgid "The filename of the image to be loaded."
+msgstr ""
+
+#: .tmp/saneopts.h:333
+#, no-c-format
+msgid ""
+"Sets the size of the halftoning (dithering) pattern used when scanning "
+"halftoned images."
+msgstr ""
+
+#: .tmp/saneopts.h:337
+#, no-c-format
+msgid ""
+"Defines the halftoning (dithering) pattern for scanning halftoned images."
+msgstr ""
+
+#: .tmp/saneopts.h:341
+#, no-c-format
+msgid "Use same values for X and Y resolution"
+msgstr ""
+
+#: .tmp/saneopts.h:343
+#, no-c-format
+msgid "Swap black and white"
+msgstr ""
+
+#: .tmp/saneopts.h:345
+#, no-c-format
+msgid "Do a quality white-calibration"
+msgstr ""
+
+#: .tmp/saneopts.h:347
+#, no-c-format
+msgid "Use lens that doubles optical resolution"
+msgstr ""
+
+#: .tmp/saneopts.h:349 .tmp/saneopts.h:361
+#, no-c-format
+msgid "In RGB-mode use same values for each color"
+msgstr ""
+
+#: .tmp/saneopts.h:351
+#, no-c-format
+msgid "Select minimum-brightness to get a white point"
+msgstr ""
+
+#: .tmp/saneopts.h:353
+#, no-c-format
+msgid "Analog gamma-correction"
+msgstr ""
+
+#: .tmp/saneopts.h:355
+#, no-c-format
+msgid "Analog gamma-correction for red"
+msgstr ""
+
+#: .tmp/saneopts.h:357
+#, no-c-format
+msgid "Analog gamma-correction for green"
+msgstr ""
+
+#: .tmp/saneopts.h:359
+#, no-c-format
+msgid "Analog gamma-correction for blue"
+msgstr ""
+
+#: .tmp/saneopts.h:363
+#, no-c-format
+msgid "Warmup lamp before scanning"
+msgstr ""
+
+#: .tmp/saneopts.h:365
+#, no-c-format
+msgid "Define exposure-time for calibration"
+msgstr ""
+
+#: .tmp/saneopts.h:367
+#, no-c-format
+msgid "Define exposure-time for red calibration"
+msgstr ""
+
+#: .tmp/saneopts.h:369
+#, no-c-format
+msgid "Define exposure-time for green calibration"
+msgstr ""
+
+#: .tmp/saneopts.h:371
+#, no-c-format
+msgid "Define exposure-time for blue calibration"
+msgstr ""
+
+#: .tmp/saneopts.h:373
+#, no-c-format
+msgid "Define exposure-time for scan"
+msgstr ""
+
+#: .tmp/saneopts.h:375
+#, no-c-format
+msgid "Define exposure-time for red scan"
+msgstr ""
+
+#: .tmp/saneopts.h:377
+#, no-c-format
+msgid "Define exposure-time for green scan"
+msgstr ""
+
+#: .tmp/saneopts.h:379
+#, no-c-format
+msgid "Define exposure-time for blue scan"
+msgstr ""
+
+#: .tmp/saneopts.h:381
+#, no-c-format
+msgid "Enable selection of exposure-time"
+msgstr ""
+
+#: .tmp/saneopts.h:383
+#, no-c-format
+msgid "Define lamp density for calibration"
+msgstr ""
+
+#: .tmp/saneopts.h:385
+#, no-c-format
+msgid "Define lamp density for scan"
+msgstr ""
+
+#: .tmp/saneopts.h:387
+#, no-c-format
+msgid "Enable selection of lamp density"
+msgstr ""
+
+#: .tmp/saneopts.h:389
+#, no-c-format
+msgid "Turn off lamp when program exits"
+msgstr ""
+
+#: .tmp/saneopts.h:395
+#, no-c-format
+msgid "Lineart"
+msgstr ""

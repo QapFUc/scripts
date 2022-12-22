@@ -1,0 +1,441 @@
+*PPD-Adobe:	"4.3"
+*%
+*% Create By Panasonic
+*%
+*FormatVersion: "4.3"
+*FileVersion: "Ver.2.0.4"
+*LanguageVersion: English
+*LanguageEncoding: ISOLatin1
+*PCFileName: "L_Panasonic-MC6280N-gdi.ppd"
+*Manufacturer: "Panasonic"
+*Product: "(KX-MC6280N)"
+*ModelName: "Panasonic KX-MC6280N"
+*ShortNickName: "Panasonic KX-MC6280N"
+*NickName: "Panasonic KX-MC6280N GDI"
+*PSVersion: "(3010.000) 550"
+*PSVersion: "(3010.000) 651"
+*PSVersion: "(3010.000) 652"
+*PSVersion: "(3010.000) 653"
+*PSVersion: "(3010.000) 704"
+*PSVersion: "(3010.000) 705"
+*PSVersion: "(3010.000) 800"
+*LanguageLevel: "3"
+*ColorDevice: True
+*DefaultColorSpace: RGB
+*FileSystem: False
+*Throughput: "21"
+*LandscapeOrientation: Plus90
+*TTRasterizer: Type42
+*cupsVersion: 1.2
+*cupsManualCopies: False
+*cupsLanguages: "en ja"
+
+*cupsFilter: "application/vnd.cups-postscript 0 L_H0JDGCZAZ"
+
+*PanasonicAttr Utility:	PanUtility
+*PanasonicAttr SPCFILE:	L_HJJD.SPC
+*PanasonicAttr LIBJBIG: L_H0JDJCZAZ
+
+*VariablePaperSize: False
+
+*OpenGroup: General/General
+
+*OpenUI *PageSize/Paper Size: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: Letter
+*PageSize Letter/Letter 8.5 x 11.00 in: "<</PageSize[612 792]/ImagingBBox null>>setpagedevice %% ID=1"
+*PageSize Legal/Legal 8.5 x 14.00 in: "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice %% ID=5"
+*PageSize A4/A4 210.0 x 297.0 mm: "<</PageSize[595 842]/ImagingBBox null>>setpagedevice %% ID=9"
+*PageSize B5/B5 (JIS) 182.0 x 257.0 mm: "<</PageSize[516 729]/ImagingBBox null>>setpagedevice %% ID=13"
+*PageSize ISOB5/B5 (ISO) 176.0 x 250.0 mm: "<</PageSize[499 709]/ImagingBBox null>>setpagedevice %% ID=258"
+*PageSize Env10/Envelope #10 4.12 x 9.50 in: "<</PageSize[297 684]/ImagingBBox null>>setpagedevice %% ID=20"
+*PageSize EnvDL/Envelope DL 110.0 x 220.0 mm: "<</PageSize[312 624]/ImagingBBox null>>setpagedevice %% ID=27"
+*PageSize 85x13/216x330 216.0 x 330.0 mm: "<</PageSize[612 936]/ImagingBBox null>>setpagedevice %% ID=14"
+*PageSize 85x134/216x340 216.0 x 340.0 mm: "<</PageSize[612 964]/ImagingBBox null>>setpagedevice %% ID=271"
+*PageSize Youkei4gou/Japanese Envelope You #4 105.0 x 235.0 mm: "<</PageSize[298 666]/ImagingBBox null>>setpagedevice %% ID=91"
+*PageSize Hagaki/Japanese Postcard 100.0 x 148.0 mm: "<</PageSize[283 420]/ImagingBBox null>>setpagedevice %% ID=43"
+
+*CloseUI: *PageSize
+
+*OpenUI *PageRegion: PickOne
+*OrderDependency: 10 AnySetup *PageRegion
+*DefaultPageRegion: Letter
+*PageRegion Letter/Letter 8.5 x 11.00 in: "<</PageSize[612 792]/ImagingBBox null>>setpagedevice %% ID=1"
+*PageRegion Legal/Legal 8.5 x 14.00 in: "<</PageSize[612 1008]/ImagingBBox null>>setpagedevice %% ID=5"
+*PageRegion A4/A4 210.0 x 297.0 mm: "<</PageSize[595 842]/ImagingBBox null>>setpagedevice %% ID=9"
+*PageRegion B5/B5 (JIS) 182.0 x 257.0 mm: "<</PageSize[516 729]/ImagingBBox null>>setpagedevice %% ID=13"
+*PageRegion ISOB5/B5 (ISO) 176.0 x 250.0 mm: "<</PageSize[499 709]/ImagingBBox null>>setpagedevice %% ID=258"
+*PageRegion Env10/Envelope #10 4.12 x 9.50 in: "<</PageSize[297 684]/ImagingBBox null>>setpagedevice %% ID=20"
+*PageRegion EnvDL/Envelope DL 110.0 x 220.0 mm: "<</PageSize[312 624]/ImagingBBox null>>setpagedevice %% ID=27"
+*PageRegion 85x13/216x330 216.0 x 330.0 mm: "<</PageSize[612 936]/ImagingBBox null>>setpagedevice %% ID=14"
+*PageRegion 85x134/216x340 216.0 x 340.0 mm: "<</PageSize[612 964]/ImagingBBox null>>setpagedevice %% ID=271"
+*PageRegion Youkei4gou/Japanese Envelope You #4 105.0 x 235.0 mm: "<</PageSize[298 666]/ImagingBBox null>>setpagedevice %% ID=91"
+*PageRegion Hagaki/Japanese Postcard 100.0 x 148.0 mm: "<</PageSize[283 420]/ImagingBBox null>>setpagedevice %% ID=43"
+*CloseUI: *PageRegion
+
+*DefaultImageableArea: Letter
+*ImageableArea Letter/Letter 8.5 x 11.00 in: "12 12 600 780"
+*ImageableArea Legal/Legal 8.5 x 14.00 in: "12 12 600 996"
+*ImageableArea A4/A4 210.0 x 297.0 mm: "12 12 583 830"
+*ImageableArea Env10/Envelope #10 4.12 x 9.50 in: "12 12 285 672"
+*ImageableArea EnvDL/Envelope DL 110.0 x 220.0 mm: "12 12 300 612"
+*ImageableArea B5/B5 (JIS) 182.0 x 257.0 mm: "12 12 504 717"
+*ImageableArea ISOB5/B5 (ISO) 176.0 x 250.0 mm: "12 12 487 697"
+*ImageableArea 85x13/216x330 216.0 x 330.0 mm: "12 12 600 924"
+*ImageableArea 85x134/216x340 216.0 x 340.0 mm: "12 12 600 952"
+*ImageableArea Youkei4gou/Japanese Envelope You #4 105.0 x 235.0 mm: "12 12 286 654"
+*ImageableArea Hagaki/Japanese Postcard 100.0 x 148.0 mm: "12 12 271 408"
+
+*DefaultPaperDimension: Letter
+*PaperDimension Letter/Letter 8.5 x 11.00 in: "612 792"
+*PaperDimension Legal/Legal 8.5 x 14.00 in: "612 1008"
+*PaperDimension A4/A4 210.0 x 297.0 mm: "595 842"
+*PaperDimension Env10/Envelope #10 4.12 x 9.50 in: "297 684"
+*PaperDimension EnvDL/Envelope DL 110.0 x 220.0 mm: "312 624"
+*PaperDimension B5/B5 (JIS) 182.0 x 257.0 mm: "516 729"
+*PaperDimension ISOB5/B5 (ISO) 176.0 x 250.0 mm: "499 709"
+*PaperDimension 85x13/216x330 216.0 x 330.0 mm: "612 936"
+*PaperDimension 85x134/216x340 216.0 x 340.0 mm: "612 964"
+*PaperDimension Youkei4gou/Japanese Envelope You #4 105.0 x 235.0 mm: "298 666"
+*PaperDimension Hagaki/Japanese Postcard 100.0 x 148.0 mm: "283 420"
+
+*OpenUI *MediaType/Media Type: PickOne
+*OrderDependency: 50 AnySetup *MediaType
+*DefaultMediaType: ThinPaper
+*MediaType Plain/Plain Paper 2: "%% ID=1"
+*MediaType ThinPaper/Plain Paper 1: "%% ID=262"
+*MediaType Transparency/Transparency: "%% ID=2"
+*MediaType Labels/Label: "%% ID=258"
+*MediaType ThickPaper/Thick Paper: "%% ID=257"
+*MediaType CardStock/Card Stock: "%% ID=277"
+*MediaType Envelope/Envelope: "%% ID=260"
+*MediaType Hagaki/Japanese Postcard: "%% ID=268"
+*CloseUI: *MediaType
+
+*OpenUI *InputSlot/Paper Source: PickOne
+*OrderDependency: 60 AnySetup *InputSlot
+*DefaultInputSlot: Auto
+*InputSlot Auto/Automatically Select: "%% ID=7"
+*InputSlot Tray1/Input Tray (#1): "%% ID=1"
+*InputSlot Tray2/Input Tray (#2): "%% ID=2"
+*CloseUI: *InputSlot
+
+*OpenUI *Duplex/Duplex: PickOne
+*OrderDependency: 100 AnySetup *Duplex
+*DefaultDuplex: None
+*Duplex None/None: "<</Duplex false>>setpagedevice %% ID=1"
+*Duplex DuplexNoTumble/Flip on Long Edge: "<</Duplex true/Tumble false>>setpagedevice %% ID=2"
+*Duplex DuplexTumble/Flip on Short Edge: "<</Duplex true/Tumble true>>setpagedevice %% ID=3"
+*CloseUI: *Duplex
+
+*OpenUI *BookletBinding/Booklet Binding: PickOne
+*OrderDependency: 80 AnySetup *BookletBinding
+*DefaultBookletBinding: None
+*BookletBinding None/None: "%% ID=0"
+*BookletBinding Left/Left Binding: "%% ID=1"
+*BookletBinding Right/Right Binding: "%% ID=2"
+*CloseUI: *BookletBinding
+
+*OpenUI *BookletUnit/Booklet Unit: PickOne
+*OrderDependency: 85 AnySetup *BookletUnit
+*DefaultBookletUnit: All
+*BookletUnit All/All Sheets: "%% ID=0"
+*BookletUnit 1/1 Sheet: "%% ID=1"
+*BookletUnit 2/2 Sheets: "%% ID=2"
+*BookletUnit 4/4 Sheets: "%% ID=4"
+*BookletUnit 8/8 Sheets: "%% ID=8"
+*CloseUI: *BookletUnit
+
+*OpenUI *Poster/Poster: PickOne
+*OrderDependency: 180 AnySetup *Poster
+*DefaultPoster: None
+*Poster None/None: "%% ID=0"
+*Poster 1x2/1x2: "%% ID=1"
+*Poster 2x2/2x2: "%% ID=2"
+*Poster 3x3/3x3: "%% ID=3"
+*Poster 4x4/4x4: "%% ID=4"
+*CloseUI: *Poster
+
+*CloseGroup: General
+
+*OpenGroup: Output/Output
+
+*OpenUI *Collate/Collate: Boolean
+*OrderDependency: 200 AnySetup *Collate
+*DefaultCollate: True
+*Collate True/True: "%%"
+*Collate False/False: "%%"
+*CloseUI: *Collate
+
+*CloseGroup: Output
+
+*OpenGroup: Quality/Quality
+
+*OpenUI *ColorMode/Color Mode: PickOne
+*OrderDependency: 410 AnySetup *ColorMode
+*DefaultColorMode: Color
+*ColorMode Color/Color: "%% ID=2"
+*ColorMode Photo/Photo Color: "%% ID=3"
+*ColorMode Gray/Grayscale: "%% ID=1"
+*CloseUI: *ColorMode
+
+*OpenUI *Resolution/Resolution: PickOne
+*OrderDependency: 430 AnySetup *Resolution
+*DefaultResolution: Standard
+*Resolution Standard/Standard: "<</HWResolution[600 600]>>setpagedevice %% ID=2"
+*Resolution Fine/Fine: "<</HWResolution[600 600]>>setpagedevice %% ID=3"
+*Resolution Enhance/Enhance: "<</HWResolution[600 600]>>setpagedevice %% ID=4"
+*CloseUI: *Resolution
+
+*OpenUI *TonerSave/Toner Save: Boolean
+*OrderDependency: 440 AnySetup *TonerSave
+*DefaultTonerSave: False
+*TonerSave True/True: "%% ID=1"
+*TonerSave False/False: "%% ID=0"
+*CloseUI: *TonerSave
+
+*%%OpenUI *TextAsBlack/Print All Text As Black: Boolean
+*%%OrderDependency: 450 AnySetup *TextAsBlack
+*%%DefaultTextAsBlack: False
+*%%TextAsBlack True/True: "%%"
+*%%TextAsBlack False/False: "%%"
+*%%CloseUI: *TextAsBlack
+
+*CloseGroup: Quality
+
+*OpenGroup: InstallableOptions/InstallableOptions
+
+*OpenUI *OptionNumberTray/Number of Paper Tray: PickOne
+*DefaultOptionNumberTray: 1
+*OptionNumberTray 1/1: "%%"
+*OptionNumberTray 2/2: "%%"
+*CloseUI: *OptionNumberTray
+
+*OpenUI *OptionDuplexer/Duplexer: PickOne
+*DefaultOptionDuplexer: NotInstalled
+*OptionDuplexer Installed/Installed: "%%"
+*OptionDuplexer NotInstalled/Not Installed: "%%"
+*CloseUI: *OptionDuplexer
+
+*CloseGroup: InstallableOptions
+
+*%
+*% UIConstraints
+*%
+*UIConstraints: *OptionNumberTray 1 *InputSlot Tray2
+*UIConstraints: *OptionDuplexer NotInstalled *Duplex DuplexTumble
+*UIConstraints: *OptionDuplexer NotInstalled *Duplex DuplexNoTumble
+*UIConstraints: *OptionDuplexer NotInstalled *BookletBinding Left
+*UIConstraints: *OptionDuplexer NotInstalled *BookletBinding Right
+*UIConstraints: *PageSize Letter *MediaType Hagaki
+*UIConstraints: *PageSize Letter *MediaType Envelope
+*UIConstraints: *PageSize Legal *MediaType Transparency
+*UIConstraints: *PageSize Legal *MediaType Labels
+*UIConstraints: *PageSize Legal *MediaType Envelope
+*UIConstraints: *PageSize Legal *MediaType Hagaki
+*UIConstraints: *PageSize A4 *MediaType Envelope
+*UIConstraints: *PageSize A4 *MediaType Hagaki
+*UIConstraints: *PageSize B5 *MediaType Transparency
+*UIConstraints: *PageSize B5 *MediaType Labels
+*UIConstraints: *PageSize B5 *MediaType Envelope
+*UIConstraints: *PageSize B5 *MediaType Hagaki
+*UIConstraints: *PageSize B5 *InputSlot Tray2
+*UIConstraints: *PageSize ISOB5 *MediaType Transparency
+*UIConstraints: *PageSize ISOB5 *MediaType Labels
+*UIConstraints: *PageSize ISOB5 *MediaType Envelope
+*UIConstraints: *PageSize ISOB5 *MediaType Hagaki
+*UIConstraints: *PageSize ISOB5 *InputSlot Tray2
+*UIConstraints: *PageSize 85x13 *MediaType Transparency
+*UIConstraints: *PageSize 85x13 *MediaType Labels
+*UIConstraints: *PageSize 85x13 *MediaType Envelope
+*UIConstraints: *PageSize 85x13 *MediaType Hagaki
+*UIConstraints: *PageSize 85x13 *InputSlot Tray2
+*UIConstraints: *PageSize 85x134 *MediaType Transparency
+*UIConstraints: *PageSize 85x134 *MediaType Labels
+*UIConstraints: *PageSize 85x134 *MediaType Envelope
+*UIConstraints: *PageSize 85x134 *MediaType Hagaki
+*UIConstraints: *PageSize 85x134 *InputSlot Tray2
+*UIConstraints: *PageSize Env10 *MediaType Transparency
+*UIConstraints: *PageSize Env10 *MediaType Labels
+*UIConstraints: *PageSize Env10 *MediaType CardStock
+*UIConstraints: *PageSize Env10 *MediaType Hagaki
+*UIConstraints: *PageSize Env10 *InputSlot Tray2
+*UIConstraints: *PageSize Env10 *Duplex DuplexTumble
+*UIConstraints: *PageSize Env10 *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Env10 *BookletBinding Left
+*UIConstraints: *PageSize Env10 *BookletBinding Right
+*UIConstraints: *PageSize EnvDL *MediaType Transparency
+*UIConstraints: *PageSize EnvDL *MediaType Labels
+*UIConstraints: *PageSize EnvDL *MediaType CardStock
+*UIConstraints: *PageSize EnvDL *MediaType Hagaki
+*UIConstraints: *PageSize EnvDL *InputSlot Tray2
+*UIConstraints: *PageSize EnvDL *Duplex DuplexTumble
+*UIConstraints: *PageSize EnvDL *Duplex DuplexNoTumble
+*UIConstraints: *PageSize EnvDL *BookletBinding Left
+*UIConstraints: *PageSize EnvDL *BookletBinding Right
+*UIConstraints: *PageSize Youkei4gou *MediaType Transparency
+*UIConstraints: *PageSize Youkei4gou *MediaType Labels
+*UIConstraints: *PageSize Youkei4gou *MediaType Hagaki
+*UIConstraints: *PageSize Youkei4gou *InputSlot Tray2
+*UIConstraints: *PageSize Youkei4gou *Duplex DuplexTumble
+*UIConstraints: *PageSize Youkei4gou *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Youkei4gou *BookletBinding Left
+*UIConstraints: *PageSize Youkei4gou *BookletBinding Right
+*UIConstraints: *PageSize Hagaki *MediaType Transparency
+*UIConstraints: *PageSize Hagaki *MediaType Labels
+*UIConstraints: *PageSize Hagaki *MediaType Envelope
+*UIConstraints: *PageSize Hagaki *InputSlot Tray2
+*UIConstraints: *PageSize Hagaki *Duplex DuplexTumble
+*UIConstraints: *PageSize Hagaki *Duplex DuplexNoTumble
+*UIConstraints: *PageSize Hagaki *BookletBinding Left
+*UIConstraints: *PageSize Hagaki *BookletBinding Right
+*UIConstraints: *MediaType Transparency *Duplex DuplexTumble
+*UIConstraints: *MediaType Transparency *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Transparency *BookletBinding Left
+*UIConstraints: *MediaType Transparency *BookletBinding Right
+*UIConstraints: *MediaType Labels *Duplex DuplexTumble
+*UIConstraints: *MediaType Labels *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Labels *BookletBinding Left
+*UIConstraints: *MediaType Labels *BookletBinding Right
+*UIConstraints: *MediaType ThickPaper *Duplex DuplexTumble
+*UIConstraints: *MediaType ThickPaper *Duplex DuplexNoTumble
+*UIConstraints: *MediaType ThickPaper *BookletBinding Left
+*UIConstraints: *MediaType ThickPaper *BookletBinding Right
+*UIConstraints: *MediaType CardStock *Duplex DuplexTumble
+*UIConstraints: *MediaType CardStock *Duplex DuplexNoTumble
+*UIConstraints: *MediaType CardStock *BookletBinding Left
+*UIConstraints: *MediaType CardStock *BookletBinding Right
+*UIConstraints: *MediaType Envelope *Duplex DuplexTumble
+*UIConstraints: *MediaType Envelope *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Envelope *BookletBinding Left
+*UIConstraints: *MediaType Envelope *BookletBinding Right
+*UIConstraints: *MediaType Hagaki *Duplex DuplexTumble
+*UIConstraints: *MediaType Hagaki *Duplex DuplexNoTumble
+*UIConstraints: *MediaType Hagaki *BookletBinding Left
+*UIConstraints: *MediaType Hagaki *BookletBinding Right
+*UIConstraints: *BookletBinding Left *Duplex None
+*UIConstraints: *BookletBinding Left *Duplex DuplexNoTumble
+*UIConstraints: *BookletBinding Left *Poster 1x2
+*UIConstraints: *BookletBinding Left *Poster 2x2
+*UIConstraints: *BookletBinding Left *Poster 3x3
+*UIConstraints: *BookletBinding Left *Poster 4x4
+*UIConstraints: *BookletBinding Right *Duplex None
+*UIConstraints: *BookletBinding Right *Duplex DuplexNoTumble
+*UIConstraints: *BookletBinding Right *Poster 1x2
+*UIConstraints: *BookletBinding Right *Poster 2x2
+*UIConstraints: *BookletBinding Right *Poster 3x3
+*UIConstraints: *BookletBinding Right *Poster 4x4
+
+*% Japanese
+*ja.Translation General/基本: ""
+*ja.Translation PageSize/原稿サイズ: ""
+*ja.PageSize Letter/レター 8.5 x 11.00 in: ""
+*ja.PageSize Legal/リーガル 8.5 x 14.00 in: ""
+*ja.PageSize A4/A4 210.0 x 297.0 mm: ""
+*ja.PageSize Env10/封筒 COM-10 4.12 x 9.50 in: ""
+*ja.PageSize EnvDL/封筒 DL 110.0 x 220.0 mm: ""
+*ja.PageSize B5/B5 (JIS) 182.0 x 257.0 mm: ""
+*ja.PageSize ISOB5/B5 (ISO) 176.0 x 250.0 mm: ""
+*ja.PageSize 85x13/216x330 216.0 x 330.0 mm: ""
+*ja.PageSize 85x134/216x340 216.0 x 340.0 mm: ""
+*ja.PageSize Youkei4gou/封筒 洋形４号 105.0 x 235.0 mm: ""
+*ja.PageSize Hagaki/はがき 100.0 x 148.0 mm: ""
+*ja.Translation InputSlot/給紙方法: ""
+*ja.InputSlot Auto/自動選択: ""
+*ja.InputSlot Tray1/トレイ１: ""
+*ja.InputSlot Tray2/トレイ２: ""
+*ja.Translation MediaType/用紙の種類: ""
+*ja.MediaType Plain/厚口普通紙: ""
+*ja.MediaType ThinPaper/普通紙: ""
+*ja.MediaType Transparency/ＯＨＰフィルム: ""
+*ja.MediaType Labels/ラベル紙: ""
+*ja.MediaType ThickPaper/厚紙Ａ: ""
+*ja.MediaType CardStock/厚紙Ｂ: ""
+*ja.MediaType Envelope/封筒: ""
+*ja.MediaType Hagaki/はがき: ""
+*ja.Translation Duplex/両面印刷: ""
+*ja.Duplex None/片面印刷: ""
+*ja.Duplex DuplexNoTumble/両面(長辺とじ): ""
+*ja.Duplex DuplexTumble/両面(短辺とじ): ""
+*ja.Translation BookletBinding/とじ方: ""
+*ja.BookletBinding None/なし: ""
+*ja.BookletBinding Left/左とじ: ""
+*ja.BookletBinding Right/右とじ: ""
+*ja.Translation BookletUnit/とじる単位: ""
+*ja.BookletUnit All/全部: ""
+*ja.BookletUnit 1/１枚: ""
+*ja.BookletUnit 2/２枚: ""
+*ja.BookletUnit 4/４枚: ""
+*ja.BookletUnit 8/８枚: ""
+*ja.Translation Poster/ポスター印刷: ""
+*ja.Poster None/なし: ""
+*ja.Poster 1x2/1x2: ""
+*ja.Poster 2x2/2x2: ""
+*ja.Poster 3x3/3x3: ""
+*ja.Poster 4x4/4x4: ""
+*ja.Translation Output/出力: ""
+*ja.Translation Collate/部単位: ""
+*ja.Collate True/はい: ""
+*ja.Collate False/いいえ: ""
+*ja.Translation Quality/品質: ""
+*ja.Translation ColorMode/カラーモード: ""
+*ja.ColorMode Color/カラー: ""
+*ja.ColorMode Photo/カラー（写真）: ""
+*ja.ColorMode Gray/白黒: ""
+*ja.Translation Resolution/品質: ""
+*ja.Resolution Standard/スタンダード: ""
+*ja.Resolution Fine/ファイン: ""
+*ja.Resolution Enhance/エンハンス: ""
+*ja.Translation TonerSave/トナーセーブ: ""
+*ja.TonerSave True/はい: ""
+*ja.TonerSave False/いいえ: ""
+*ja.Translation TextAsBlack/色文字を黒で印刷: ""
+*ja.TextAsBlack True/はい: ""
+*ja.TextAsBlack False/いいえ: ""
+*ja.Translation OptionNumberTray/給紙トレイの数: ""
+*ja.Translation OptionDuplexer/自動両面印刷ユニット: ""
+*ja.OptionDuplexer Installed/あり:	""
+*ja.OptionDuplexer NotInstalled/なし:	""
+
+*%
+*% Generic boilerplate PPD stuff as standard PostScript fonts and so on
+*%
+*DefaultFont: Courier
+*Font AvantGarde-Book: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-BookOblique: Standard "(001.006S)" Standard ROM
+*Font AvantGarde-Demi: Standard "(001.007S)" Standard ROM
+*Font AvantGarde-DemiOblique: Standard "(001.007S)" Standard ROM
+*Font Bookman-Demi: Standard "(001.004S)" Standard ROM
+*Font Bookman-DemiItalic: Standard "(001.004S)" Standard ROM
+*Font Bookman-Light: Standard "(001.004S)" Standard ROM
+*Font Bookman-LightItalic: Standard "(001.004S)" Standard ROM
+*Font Courier: Standard "(002.004S)" Standard ROM
+*Font Courier-Bold: Standard "(002.004S)" Standard ROM
+*Font Courier-BoldOblique: Standard "(002.004S)" Standard ROM
+*Font Courier-Oblique: Standard "(002.004S)" Standard ROM
+*Font Helvetica: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Narrow-Bold: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-BoldOblique: Standard "(001.007S)" Standard ROM
+*Font Helvetica-Narrow-Oblique: Standard "(001.006S)" Standard ROM
+*Font Helvetica-Oblique: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Bold: Standard "(001.009S)" Standard ROM
+*Font NewCenturySchlbk-BoldItalic: Standard "(001.007S)" Standard ROM
+*Font NewCenturySchlbk-Italic: Standard "(001.006S)" Standard ROM
+*Font NewCenturySchlbk-Roman: Standard "(001.007S)" Standard ROM
+*Font Palatino-Bold: Standard "(001.005S)" Standard ROM
+*Font Palatino-BoldItalic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Italic: Standard "(001.005S)" Standard ROM
+*Font Palatino-Roman: Standard "(001.005S)" Standard ROM
+*Font Symbol: Special "(001.007S)" Special ROM
+*Font Times-Bold: Standard "(001.007S)" Standard ROM
+*Font Times-BoldItalic: Standard "(001.009S)" Standard ROM
+*Font Times-Italic: Standard "(001.007S)" Standard ROM
+*Font Times-Roman: Standard "(001.007S)" Standard ROM
+*Font ZapfChancery-MediumItalic: Standard "(001.007S)" Standard ROM
+*Font ZapfDingbats: Special "(001.004S)" Standard ROM
+*%
+*% End of PPD
+*%

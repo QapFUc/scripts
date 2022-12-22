@@ -1,0 +1,46 @@
+﻿[Main]
+Version=1
+
+[dlg100]
+10=Panasonic MFS Tools
+
+[dlg101]
+111=Generale
+113=Scansione
+114=Salva su:
+116=Sfoglia...
+119=Impostazione OCR
+121=Percorso OCR:
+123=Sfoglia...
+124=Selezionare l'applicazione OCR
+125=Selezionare una cartella in cui salvare i file digitalizzati.
+126=Applicazione OCR non valida.
+127=La password specificata non esiste.
+
+[dlg102]
+211=Network
+212=Lista nomi PC sul dispositivo
+213=Lista nomi PC sul dispositivo
+214=Nome PC:
+215=Configura dispositivo di rete
+216=Nome modello
+217=Nome computer
+218=Indirizzo IP
+219=Ricerca
+220=Configura...
+
+[dlg103]
+311=Ricerca dispositivi in linea...
+
+
+[Message]
+1000=Panasonic MFS Push Scan
+1001=Panasonic MFS push scan fallita.
+1002=Application Open Error.
+1003=La password specificata non esiste.
+1004=Applicazione OCR non valida.
+1005=Scanned file path:
+1006=Error: Invalid parameters.
+1007=Cloud non è supportato.
+1008=Formati Misti non è supportato.
+

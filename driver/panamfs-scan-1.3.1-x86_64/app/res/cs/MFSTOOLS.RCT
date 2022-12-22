@@ -1,0 +1,46 @@
+﻿[Main]
+Version=1
+
+[dlg100]
+10=Panasonic MFS Tools
+
+[dlg101]
+111=Obecné
+113=Skenování
+114=Uložit do:
+116=Procházet...
+119=Nastavení OCR
+121=Cesta OCR:
+123=Procházet...
+124=Vyberte aplikaci OCR
+125=Vyberte složku, kam budou ukládány skenované soubory.
+126=Neplatná cesta k OCR aplikaci.
+127=Zadaný průchod neexistuje.
+
+[dlg102]
+211=Síť
+212=Název počítače v seznamech zařízení
+213=Název počítače v seznamech zařízení
+214=Název počítače:
+215=Konfigurace síťového zařízení
+216=Název modelu
+217=Název zařízení
+218=Adresa IP
+219=Vyhledávání
+220=Nastavení...
+
+[dlg103]
+311=Vyhledávání online zařízení...
+
+
+[Message]
+1000=Panasonic MFS Push Scan
+1001=Selhala funkce Panasonic MFS push scan.
+1002=Application Open Error.
+1003=Zadaný průchod neexistuje.
+1004=Neplatná cesta k OCR aplikaci.
+1005=Scanned file path:
+1006=Error: Invalid parameters.
+1007=Cloud není podporováno.
+1008=Smíšené velikosti není podporováno.
+

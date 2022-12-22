@@ -1,0 +1,199 @@
+#! /bin/sh
+#
+# batch file to uninstall Panasonic MFS Scanner Driver
+#
+
+
+INSTALL_PATH="/usr/local/share/panasonic/scanner"
+INSTALL_BIN_PATH="/usr/bin"
+
+################################################################################
+#
+# Make sure only root can run our script
+#
+if [ "$(id -u)" != "0" ]; then
+   echo "    Uninstall MUST be run as root" 1>&2
+   exit 1
+fi
+
+################################################################################
+#
+# echo informations
+#
+
+echo
+echo "    Confirmation"
+echo "    Uninstall <Panasonic MFS Scanner> "
+echo
+echo -n "    input 'y' to continue:"
+read inputval
+if test "$inputval" != "y"
+then
+	echo "    Uninstall be canceled"
+	echo
+	exit 1
+fi
+
+###############################################################################
+
+if test -f /etc/init.d/panasoniclpd-init
+then
+	/etc/init.d/panasoniclpd-init stop	
+fi
+
+killall -q PanasonicMFSlpd
+killall -q PanasonicMFSpushd
+
+
+
+################################################################################
+#
+# remove files
+#
+
+echo "    Uninstall files......"
+
+rm -f /etc/rc2.d/S80panasoniclpd-init
+rm -f /etc/rc3.d/S80panasoniclpd-init
+rm -f /etc/rc4.d/S80panasoniclpd-init
+rm -f /etc/rc5.d/S80panasoniclpd-init
+rm -f /etc/init.d/panasoniclpd-init
+
+
+rm -f $INSTALL_BIN_PATH/PanasonicMFSscan
+rm -f $INSTALL_BIN_PATH/PanasonicMFSTools
+
+rm -f /usr/local/share/applications/PanasonicMFSTools.desktop
+rm -f /etc/xdg/autostart/PanasonicMFSpushd.desktop
+
+
+
+################################################################################
+#
+# remove ./bin
+#
+rm -f $INSTALL_PATH/bin/PanasonicMFS*
+rm -f $INSTALL_PATH/bin/killpanasonicmfspushd*
+
+if test -d $INSTALL_PATH/bin
+then
+	rmdir --ignore-fail-on-non-empty -p $INSTALL_PATH/bin
+fi
+
+
+################################################################################
+#
+# remove ./conf
+#
+rm -f $INSTALL_PATH/conf/PanasonicMFS*
+if test -d $INSTALL_PATH/conf
+then
+	rmdir --ignore-fail-on-non-empty -p $INSTALL_PATH/conf
+fi
+
+
+################################################################################
+#
+# remove ./data
+#
+for file_a in $INSTALL_PATH/data/*; do
+t_file=`basename $file_a`
+  if test -d $file_a
+  then
+	rm -f $INSTALL_PATH/data/$t_file/*panamfs*
+	rm -f $INSTALL_PATH/data/$t_file/*MFS*.RCT
+
+	rmdir --ignore-fail-on-non-empty -p $INSTALL_PATH/data/$t_file
+  fi
+done
+
+if test -d $INSTALL_PATH/data
+then
+	rmdir --ignore-fail-on-non-empty -p $INSTALL_PATH/data
+fi
+
+
+
+################################################################################
+#
+# remove script data
+#
+
+if test -f /etc/gdm/PostSession/Default
+then
+	sed -i "s|^$INSTALL_PATH/bin/killpanasonicmfspushd$||" /etc/gdm/PostSession/Default
+	sed -i 's/^killall PanasonicMFSpushd$//' /etc/gdm/PostSession/Default
+	sed -i 's|^rm /var/tmp/com.panasonic.mfs.killserver.lock$||' /etc/gdm/PostSession/Default
+fi
+
+if test -f /etc/lightdm/lightdm.conf
+then
+	sed -i "s|^session-cleanup-script=$INSTALL_PATH/bin/killpanasonicmfspushd.sh$||" /etc/lightdm/lightdm.conf
+fi
+
+
+################################################################################
+#
+# sane-backend uninsatll 
+#
+
+if test -f $FILE_DLL_CONF
+then
+	sed -i 's/^panamfs$//' /etc/sane.d/dll.conf
+fi
+
+rm -f /etc/sane.d/panamfs.conf
+
+
+SANELIB_PATH=
+SANE_PATH_SEARCH="/usr/lib/sane /usr/lib64/sane"
+for DIR in $SANE_PATH_SEARCH; do
+	if test -d $DIR
+	then
+		SANELIB_PATH=$DIR
+		break
+	fi
+done
+
+if test "x$SANELIB_PATH" = "x"
+then
+	echo ""
+else
+	rm -f $SANELIB_PATH/libsane-panamfs*
+fi
+
+
+################################################################################
+#
+# remove related file. 
+#
+
+	rm -f /var/tmp/com.panasonic.mfs.*
+
+
+################################################################################
+#
+# remove ./
+#
+
+rm -f $INSTALL_PATH/Version.html
+rm -f $INSTALL_PATH/uninstall-driver
+
+if test -d $INSTALL_PATH
+then
+	rmdir --ignore-fail-on-non-empty -p $INSTALL_PATH
+fi
+
+
+################################################################################
+#
+# echo informations
+#
+
+echo
+echo "    Uninstall <Panasonic MFS Scanner> completed"
+echo
+
+
+exit 0
+

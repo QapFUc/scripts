@@ -1,0 +1,46 @@
+﻿[Main]
+Version=1
+
+[dlg100]
+10=Panasonic MFS Tools
+
+[dlg101]
+111=Allgemein
+113=Scannen
+114=Speichern unter:
+116=Durchsuchen...
+119=OCR-Einstellung
+121=OCR-Pfad:
+123=Durchsuchen...
+124=OCR-Anwendung auswählen
+125=Wählen Sie einen Ordner zum Speichern von gescannten Dateien aus.
+126=Ungültiger OCR Anwendungspfad.
+127=Der eingegebene Weg existiert nicht.
+
+[dlg102]
+211=Netzwerk
+212=Auflistung der PC Namen auf dem Gerät
+213=Auflistung der PC Namen auf dem Gerät
+214=PC-Name:
+215=Netzwerkgerät konfigurieren
+216=Modellname
+217=Gerätename
+218=IP-Adresse
+219=Search
+220=Einstellen...
+
+[dlg103]
+311=Suche verbundene Geräte...
+
+
+[Message]
+1000=Panasonic MFS Push Scan
+1001=Panasonic MFS Push Scan misslungen.
+1002=Application Open Error.
+1003=Der eingegebene Weg existiert nicht.
+1004=Ungültiger OCR Anwendungspfad.
+1005=Scanned file path:
+1006=Error: Invalid parameters.
+1007=Cloud wird nicht unterstützt.
+1008=Gemischte größe wird nicht unterstützt.
+

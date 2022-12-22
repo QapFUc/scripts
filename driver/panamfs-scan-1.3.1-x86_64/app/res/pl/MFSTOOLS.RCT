@@ -1,0 +1,46 @@
+﻿[Main]
+Version=1
+
+[dlg100]
+10=Panasonic MFS Tools
+
+[dlg101]
+111=Ogólne
+113=Skanuj
+114=Zapisz do:
+116=Przeglądaj...
+119=Ustawienia OCR
+121=Ścieżka OCR:
+123=Przeglądaj...
+124=Wybierz program OCR
+125=Wybierz folder, gdzie będą zapisywane pliki skanowania.
+126=Błędna ściezka dostepu do programu OCR.
+127=Podane upoważnienie nie istnieje.
+
+[dlg102]
+211=Sieć
+212=Lista nazw komputerów PC na urządzeniu
+213=Lista nazw komputerów PC na urządzeniu
+214=Nazwa komputera:
+215=Konfiguracja urządzenia sieciowego
+216=Model
+217=Nazwa urządzenia
+218=Adres IP
+219=Wyszukaj
+220=Konfiguracja...
+
+[dlg103]
+311=Wyszukiwanie urządzeń online...
+
+
+[Message]
+1000=Panasonic MFS Push Scan
+1001=Błąd Panasonic MFS push scan.
+1002=Application Open Error.
+1003=Podane upoważnienie nie istnieje.
+1004=Błędna ściezka dostepu do programu OCR.
+1005=Scanned file path:
+1006=Error: Invalid parameters.
+1007=Cloud nie są obsługiwane.
+1008=Mieszane formaty nie są obsługiwane.
+

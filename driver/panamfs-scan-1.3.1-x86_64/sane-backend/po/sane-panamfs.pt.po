@@ -1,0 +1,218 @@
+# Copyright (C) 2012 SANE Project.
+# Copyright (C) Panasonic System Networks Co., Ltd. 2012
+
+
+## Title: Number of options  ##
+# Use SANE default.
+msgid "Number of options"
+msgstr ""
+
+## DESC: Number of options  ##
+# Use SANE default.
+msgid ""
+"Read-only option that specifies how many options a specific devices "
+"supports."
+msgstr ""
+
+
+## Title: Preview  ##
+# Use SANE default.
+msgid "Preview"
+msgstr ""
+
+## DESC: Preview  ##
+# Use SANE default.
+msgid "Request a preview-quality scan."
+msgstr ""
+
+
+
+######## Scan Mode Group  ########
+# Use SANE default.
+msgid "Scan Mode"
+msgstr ""
+
+
+## Title: Scan mode  ##
+msgid "Scan mode"
+msgstr "Modo de Escaneamento"
+
+## DESC: Scan mode  ##
+msgid ""
+"\"Black and White\" is for documents containing only text or line art. "
+"\"Grayscale\" is for documents containing photographs. \"Color\" is for "
+"document containing color image (color scan models only)."
+msgstr ""
+"\"Preto e branco\" indicado para documentos com texto apenas. "
+"\"Escala de cinza\" indicado para documentos com fotografia. "
+"\"Cor\" indicado para documentos que contenham imagens coloridas. "
+
+## Contents: Scan mode  ##
+
+msgid "Black and White"
+msgstr "Preto e branco"
+
+msgid "Grayscale"
+msgstr "Escala de cinza"
+
+msgid "Color"
+msgstr "Cor"
+
+
+## Title: Scan resolution  ##
+msgid "Scan resolution"
+msgstr "Resolução"
+
+## DESC: Scan resolution  ##
+msgid "Select a resolution of your document."
+msgstr "Seleciona a resolução do documento."
+
+
+## Title: Duplex  ##
+msgid "Duplex"
+msgstr "Frente e Verso"
+
+## DESC: Duplex  ##
+msgid ""
+"\"None\": Scan one side of your document. \"Flip on Long Edge\": Scan "
+"both sides if your document layout is long edge. \"Flip on Short Edge\": "
+"Scan both sides if your document layout is short edge."
+msgstr ""
+"\"Nenhum\": Scanear um lado do documento. "
+"\"Virar tipo livro\": Scanear documento frente e verso - layout livro. "
+"\"Virar tipo calendário\": Scanear documento frente e verso - layout calendário."
+
+
+## Contents: Duplex  ##
+
+msgid "None"
+msgstr "Nenhum"
+
+msgid "Flip on Long Edge"
+msgstr "Virar tipo livro"
+
+msgid "Flip on Short Edge"
+msgstr "Virar tipo calendário"
+
+
+
+######## Geometry Group  ########
+# Use SANE default.
+msgid "Geometry"
+msgstr ""
+
+
+## Title: Scan Size  ##
+msgid "Scan Size"
+msgstr "Tam. Escaneamento"
+
+## DESC: Scan Size  ##
+msgid ""
+"Select a Scan Size that corresponds to the size of your original "
+"document."
+msgstr "Seleciona o tamanho do Scan, que deve corresponder ao tamanho original do documento. "
+
+## Contents: Scan Size  ##
+
+msgid "A4"
+msgstr ""
+
+msgid "Letter"
+msgstr "Carta"
+
+msgid "Legal"
+msgstr "Ofício"
+
+msgid "B5(ISO)"
+msgstr ""
+
+msgid "B5(JIS)"
+msgstr ""
+
+msgid "16K"
+msgstr ""
+
+msgid "8.5\"x13\""
+msgstr "F4/Folio/Foolscap"
+
+msgid "8.5\"x13.4\""
+msgstr "Mexico Oficio/India Legal"
+
+msgid "A5"
+msgstr ""
+
+msgid "User Define"
+msgstr "Definido pelo usuário"
+
+
+## Title: Top-left x  ##
+# Use SANE default.
+msgid "Top-left x"
+msgstr ""
+
+## DESC: Top-left x  ##
+# Use SANE default.
+msgid "Top-left x position of scan area."
+msgstr ""
+
+
+## Title: Top-left y  ##
+# Use SANE default.
+msgid "Top-left y"
+msgstr ""
+
+## DESC: Top-left y  ##
+# Use SANE default.
+msgid "Top-left y position of scan area."
+msgstr ""
+
+
+## Title: Bottom-right x  ##
+# Use SANE default.
+msgid "Bottom-right x"
+msgstr ""
+
+## DESC: Bottom-right x  ##
+# Use SANE default.
+msgid "Bottom-right x position of scan area."
+msgstr ""
+
+
+## Title: Bottom-right y  ##
+# Use SANE default.
+msgid "Bottom-right y"
+msgstr ""
+
+## DESC: Bottom-right y  ##
+# Use SANE default.
+msgid "Bottom-right y position of scan area."
+msgstr ""
+
+
+
+######## Enhancement Group  ########
+# Use SANE default.
+msgid "Enhancement"
+msgstr ""
+
+
+## Title: Brightness  ##
+msgid "Brightness"
+msgstr "Brilho"
+
+## DESC: Brightness  ##
+msgid "The balance of light and dark colors in an image."
+msgstr "Balanço das imagens para mais claro ou escuro."
+
+
+## Title: Contrast  ##
+msgid "Contrast"
+msgstr "Contraste"
+
+## DESC: Contrast  ##
+msgid ""
+"The relative difference between the dark and light portions of an image."
+msgstr "Diferença relativa entre claro e escuro de uma imagem."
+
+
+

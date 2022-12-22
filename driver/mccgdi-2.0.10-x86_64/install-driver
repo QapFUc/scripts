@@ -1,0 +1,457 @@
+#!/bin/bash
+#
+# batch file to install Panasonic Printer Driver
+#
+
+################################################################################
+#
+# Make sure only root can run our script
+#
+if [ "$(id -u)" != "0" ]; then
+   echo "    Install MUST be run as root" 1>&2
+   exit 1
+fi
+
+BUILD_CPU=x86_64
+TARGET_CPU=`uname -m`
+INSTALL_PATH="/usr/local/share/panasonic/printer"
+
+################################################################################
+#
+# check can install to thie system
+#
+CAN_INSTALL=no
+FILTER_PATH_SEARCH=""
+MODEL_PATH_SEARCH=""
+GS_PATH_SEARCH=""
+GS_GNU_PATH_SEARCH=""
+GS_GNU_BASE_PATH_SEARCH=""
+
+case $TARGET_CPU in
+	i[345]86)
+		case $BUILD_CPU in
+			i386)
+				CAN_INSTALL=yes
+			;;
+		esac
+	;;
+	i686)
+		case $BUILD_CPU in
+			i[36]86)
+				CAN_INSTALL=yes
+			;;
+		esac
+		GS_GNU_PATH_SEARCH="$GS_GNU_PATH_SEARCH /usr/lib/i386-linux-gnu/libgs.so"
+		GS_GNU_PATH_SEARCH="$GS_GNU_PATH_SEARCH /usr/lib/i386-linux-gnu/libgs.so.8"
+		GS_GNU_PATH_SEARCH="$GS_GNU_PATH_SEARCH /usr/lib/i386-linux-gnu/libgs.so.9"
+
+		GS_GNU_BASE_PATH_SEARCH="$GS_GNU_BASE_PATH_SEARCH /usr/local/lib/libgs.so"
+		GS_GNU_BASE_PATH_SEARCH="$GS_GNU_BASE_PATH_SEARCH /usr/local/lib/libgs.so.8"
+		GS_GNU_BASE_PATH_SEARCH="$GS_GNU_BASE_PATH_SEARCH /usr/local/lib/libgs.so.9"
+	;;
+	x86_64)
+		case $BUILD_CPU in
+			x86_64)
+				CAN_INSTALL=yes
+			;;
+		esac
+		FILTER_PATH_SEARCH="$FILTER_PATH_SEARCH /usr/lib64/cups/filter"
+		FILTER_PATH_SEARCH="$FILTER_PATH_SEARCH /usr/libexec64/cups/filter"
+		FILTER_PATH_SEARCH="$FILTER_PATH_SEARCH /usr/local/lib64/cups/filter"
+		FILTER_PATH_SEARCH="$FILTER_PATH_SEARCH /usr/local/libexec64/cups/filter"
+
+		GS_PATH_SEARCH="$GS_PATH_SEARCH /usr/local/lib64/libgs.so"
+		GS_PATH_SEARCH="$GS_PATH_SEARCH /usr/local/lib64/libgs.so.8"
+		GS_PATH_SEARCH="$GS_PATH_SEARCH /usr/local/lib64/libgs.so.9"
+		GS_PATH_SEARCH="$GS_PATH_SEARCH /usr/lib64/libgs.so"
+		GS_PATH_SEARCH="$GS_PATH_SEARCH /usr/lib64/libgs.so.8"
+		GS_PATH_SEARCH="$GS_PATH_SEARCH /usr/lib64/libgs.so.9"
+
+		GS_GNU_PATH_SEARCH="$GS_GNU_PATH_SEARCH /usr/lib64/x86_64-linux-gnu/libgs.so"
+		GS_GNU_PATH_SEARCH="$GS_GNU_PATH_SEARCH /usr/lib64/x86_64-linux-gnu/libgs.so.8"
+		GS_GNU_PATH_SEARCH="$GS_GNU_PATH_SEARCH /usr/lib64/x86_64-linux-gnu/libgs.so.9"
+		GS_GNU_PATH_SEARCH="$GS_GNU_PATH_SEARCH /usr/lib/x86_64-linux-gnu/libgs.so"
+		GS_GNU_PATH_SEARCH="$GS_GNU_PATH_SEARCH /usr/lib/x86_64-linux-gnu/libgs.so.8"
+		GS_GNU_PATH_SEARCH="$GS_GNU_PATH_SEARCH /usr/lib/x86_64-linux-gnu/libgs.so.9"
+
+		GS_GNU_BASE_PATH_SEARCH="$GS_GNU_BASE_PATH_SEARCH /usr/local/lib64/libgs.so"
+		GS_GNU_BASE_PATH_SEARCH="$GS_GNU_BASE_PATH_SEARCH /usr/local/lib64/libgs.so.8"
+		GS_GNU_BASE_PATH_SEARCH="$GS_GNU_BASE_PATH_SEARCH /usr/local/lib64/libgs.so.9"
+		GS_GNU_BASE_PATH_SEARCH="$GS_GNU_BASE_PATH_SEARCH /usr/local/lib/libgs.so"
+		GS_GNU_BASE_PATH_SEARCH="$GS_GNU_BASE_PATH_SEARCH /usr/local/lib/libgs.so.8"
+		GS_GNU_BASE_PATH_SEARCH="$GS_GNU_BASE_PATH_SEARCH /usr/local/lib/libgs.so.9"
+	;;
+	*)
+	;;
+esac
+
+MODEL_PATH_SEARCH="$MODEL_PATH_SEARCH /usr/share/cups/model"
+MODEL_PATH_SEARCH="$MODEL_PATH_SEARCH /usr/local/share/cups/model"
+MODEL_PATH_SEARCH="$MODEL_PATH_SEARCH /usr/share/ppd"
+MODEL_PATH_SEARCH="$MODEL_PATH_SEARCH /usr/local/share/ppd"
+
+FILTER_PATH_SEARCH="$FILTER_PATH_SEARCH /usr/lib/cups/filter"
+FILTER_PATH_SEARCH="$FILTER_PATH_SEARCH /usr/libexec/cups/filter"
+FILTER_PATH_SEARCH="$FILTER_PATH_SEARCH /usr/local/lib/cups/filter"
+FILTER_PATH_SEARCH="$FILTER_PATH_SEARCH /usr/local/libexec/cups/filter"
+
+GS_PATH_SEARCH="$GS_PATH_SEARCH /usr/local/lib/libgs.so"
+GS_PATH_SEARCH="$GS_PATH_SEARCH /usr/local/lib/libgs.so.8"
+GS_PATH_SEARCH="$GS_PATH_SEARCH /usr/local/lib/libgs.so.9"
+GS_PATH_SEARCH="$GS_PATH_SEARCH /usr/lib/libgs.so"
+GS_PATH_SEARCH="$GS_PATH_SEARCH /usr/lib/libgs.so.8"
+GS_PATH_SEARCH="$GS_PATH_SEARCH /usr/lib/libgs.so.9"
+
+if test "x$CAN_INSTALL" != "xyes"; then
+	echo "the package is build for $BUILD_CPU cpu, can not install to $TARGET_CPU system"
+    exit 1
+fi
+
+################################################################################
+#
+# find install dir
+#
+FILTER_PATH=""
+for DIR in $FILTER_PATH_SEARCH; do
+	if test -d $DIR
+	then
+		FILTER_PATH=$DIR
+		break
+	fi
+done
+MODEL_PATH=""
+for DIR in $MODEL_PATH_SEARCH; do
+	if test -d $DIR
+	then
+		MODEL_PATH=$DIR
+		break
+	fi
+done
+
+if test "x$FILTER_PATH" = "x"
+then
+	echo "  Cannot found CUPS filter path"
+	exit 1
+fi
+if test "x$MODEL_PATH" = "x"
+then
+	echo "  Cannot found CUPS model path"
+	exit 1
+fi
+
+FILTER_PROGRAMS="L_H0JDGCZAZ"
+
+################################################################################
+#
+# echo informations
+#
+
+echo
+echo "    start <Panasonic Printer Driver ($BUILD_CPU)> install......"
+
+################################################################################
+#
+# check and execute uninstall shell script
+#
+
+if test -f $INSTALL_PATH/uninstall-driver
+then
+	echo "find exist printer driver"
+	echo "    execute uninstall shell script now......"
+	if !($INSTALL_PATH/uninstall-driver)
+	then
+		echo "    uninstall old <Panasonic GDI Printer Driver> failed"
+		echo "    install driver failed"
+		echo
+		exit 1
+	fi
+fi
+
+SCRIPT=`readlink -f $0`
+SCRIPTPATH=`dirname $SCRIPT`
+PWD=`pwd`
+cd $SCRIPTPATH
+
+################################################################################
+#
+# echo informations
+#
+
+echo "    start install files......"
+
+################################################################################
+#
+# make install dir
+#
+
+mkdir -p $INSTALL_PATH/
+mkdir -p $INSTALL_PATH/bin
+mkdir -p $INSTALL_PATH/conf
+mkdir -p $INSTALL_PATH/data
+
+chmod 777 $INSTALL_PATH/conf
+
+mkdir -p /var/spool/.panamfs
+chmod 777 /var/spool/.panamfs
+
+################################################################################
+#
+# copy files
+#
+
+# create uninstall script
+cat > $INSTALL_PATH/uninstall-driver <<\_______EOF
+#!/bin/bash
+#
+# batch file to uninstall Panasonic Printer Driver
+#
+
+################################################################################
+#
+# Make sure only root can run our script
+#
+if [ "$(id -u)" != "0" ]; then
+   echo "    Uninstall MUST be run as root" 1>&2
+   exit 1
+fi
+
+################################################################################
+#
+# echo informations
+#
+
+echo
+echo "    Confirmation"
+echo "    <Panasonic Printer Driver> uninstall"
+echo
+echo -n "    input 'y' to continue:"
+read inputval
+if test "$inputval" != "y"
+then
+	echo "    uninstall be canceled"
+	echo
+	exit 1
+fi
+
+################################################################################
+#
+# remove files
+#
+
+echo "    uninstall files......"
+
+################################################################################
+#
+# follow is created by install script
+#
+
+_______EOF
+
+chmod 755 $INSTALL_PATH/uninstall-driver
+
+# copy Version file
+cp ./Version.html $INSTALL_PATH/Version.html
+echo "rm -f $INSTALL_PATH/Version.html" >> $INSTALL_PATH/uninstall-driver
+
+# copy lib files
+INSTALL_LIB_PATH="/usr/lib"
+RESTORECON="/sbin/restorecon"
+
+LIB_FILES="L_H0JDJCZAZ_2 L_H0JDJCZAZ"
+for file in $LIB_FILES; do
+	cp ./lib/$file.so.1.0.0 $INSTALL_LIB_PATH/
+	echo "rm -f $INSTALL_LIB_PATH/$file.so.1.0.0" >> $INSTALL_PATH/uninstall-driver
+	ln -sf $file.so.1.0.0 $INSTALL_LIB_PATH/$file.so.1
+	echo "rm -f $INSTALL_LIB_PATH/$file.so.1" >> $INSTALL_PATH/uninstall-driver
+	ln -sf $file.so.1 $INSTALL_LIB_PATH/$file.so
+	echo "rm -f $INSTALL_LIB_PATH/$file.so" >> $INSTALL_PATH/uninstall-driver
+done
+
+FILTER_PATH=""
+for DIR in $FILTER_PATH_SEARCH; do
+	if test -d $DIR
+	then
+		FILTER_PATH=$DIR
+		for file in $FILTER_PROGRAMS; do
+			cp ./filter/$file $FILTER_PATH/
+			echo "rm -f $FILTER_PATH/$file" >> $INSTALL_PATH/uninstall-driver
+			if test -f $RESTORECON
+			then
+				$RESTORECON $FILTER_PATH/$file
+			fi
+		done
+	fi
+done
+
+# make GhostScript link
+GS_PATH=""
+for DIR in $GS_PATH_SEARCH; do
+	if test -e $DIR
+	then
+		GS_PATH=$DIR
+		break
+	fi
+done
+if test "x$GS_PATH" = "x"
+then
+	GS_GNU_PATH=""
+	i=0
+	for DIR in $GS_GNU_PATH_SEARCH; do
+		if test -e $DIR
+		then
+			GS_GNU_PATH=$DIR
+			break
+		fi
+		i=$(($i+1))
+	done
+	if test "x$GS_GNU_PATH" = "x"
+	then
+		echo "  Cannot found GhostScript path"
+		exit 1
+	fi
+	j=0
+	for DIR in $GS_GNU_BASE_PATH_SEARCH; do
+		if test $j -eq $i
+		then
+			GS_GNU_BASE_PATH=$DIR
+			break
+		fi
+		j=$(($j+1))
+	done
+	ln -s $GS_GNU_PATH $GS_GNU_BASE_PATH
+fi
+
+# copy ppd files
+PPD_FILES=`find ppd -name *.ppd`
+MODEL_PATH=""
+for DIR in $MODEL_PATH_SEARCH; do
+	if test -d $DIR
+	then
+		MODEL_PATH=$DIR
+		mkdir -p $MODEL_PATH/panasonic/
+		chown root:root $MODEL_PATH/panasonic/
+		chmod 755 $MODEL_PATH/panasonic/
+		for file in $PPD_FILES; do
+			cp $file $MODEL_PATH/panasonic/
+			file=`basename $file`
+			echo "rm -f $MODEL_PATH/panasonic/$file" >> $INSTALL_PATH/uninstall-driver
+		done
+		echo "rmdir --ignore-fail-on-non-empty $MODEL_PATH/panasonic" >> $INSTALL_PATH/uninstall-driver
+	fi
+done
+
+# copy SPC & RCT files
+DATA_FILES=`find data`
+for file in $DATA_FILES; do
+	if test -d $file
+	then
+		mkdir -p $INSTALL_PATH/$file
+	else
+		if test -f $file
+		then
+			cp $file $INSTALL_PATH/$file
+			echo "rm -f $INSTALL_PATH/$file" >> $INSTALL_PATH/uninstall-driver
+		fi
+	fi
+done
+for file in $DATA_FILES; do
+	if test -d $file
+	then
+		echo "rmdir --ignore-fail-on-non-empty -p $INSTALL_PATH/$file" >> $INSTALL_PATH/uninstall-driver
+	fi
+done
+
+# copy tools
+cp ./panautil/L_H0JDUIZAZ $INSTALL_PATH/bin/
+echo "rm -f $INSTALL_PATH/bin/L_H0JDUIZAZ" >> $INSTALL_PATH/uninstall-driver
+cp ./panautil/L_H0JDUCZAZ $INSTALL_PATH/bin/
+echo "rm -f $INSTALL_PATH/bin/L_H0JDUCZAZ" >> $INSTALL_PATH/uninstall-driver
+chmod 4755 $INSTALL_PATH/bin/L_H0JDUCZAZ
+cp ./panautil/L_H0JDUIZAZ.png $INSTALL_PATH/bin/
+echo "rm -f $INSTALL_PATH/bin/L_H0JDUIZAZ.png" >> $INSTALL_PATH/uninstall-driver
+
+if test -d /usr/local/share/applications/
+then
+  echo "# desktop folder = /usr/local/share/applications" >> $INSTALL_PATH/uninstall-driver
+else
+  mkdir -p /usr/local/share/applications
+  chown root:root /usr/local/share/applications
+  chmod 755 /usr/local/share/applications
+fi
+
+if test -d /usr/local/share/applications/
+then
+  cp ./panautil/L_H0JDUIZAZ.desktop /usr/local/share/applications/
+  echo "rm -f /usr/local/share/applications/L_H0JDUIZAZ.desktop" >> $INSTALL_PATH/uninstall-driver
+fi
+
+echo "rm -Rf $INSTALL_PATH/conf" >> $INSTALL_PATH/uninstall-driver
+echo "rmdir --ignore-fail-on-non-empty -p $INSTALL_PATH/bin" >> $INSTALL_PATH/uninstall-driver
+echo "rm -f $INSTALL_PATH/uninstall-driver" >> $INSTALL_PATH/uninstall-driver
+
+cat >> $INSTALL_PATH/uninstall-driver <<\_______EOF
+
+################################################################################
+#
+# restart 
+#
+
+echo "    restart spooler - CUPS"
+if test -f /etc/init.d/cups
+then
+	/etc/init.d/cups restart
+else
+	if test -f /etc/init.d/cupsys
+	then
+		/etc/init.d/cupsys restart
+	fi
+fi
+
+################################################################################
+#
+# echo informations
+#
+
+echo
+echo "    uninstall driver completed"
+echo
+
+echo "    please use \"system-config-printer\" or \"lpadmin\" "
+echo "        to remove all printers based on the driver."
+echo
+
+exit 0
+
+_______EOF
+
+
+################################################################################
+#
+# restart CUPS
+#
+echo "    restart spooler - CUPS"
+if test -f /etc/init.d/cups
+then
+	/etc/init.d/cups restart
+else
+	if test -f /etc/init.d/cupsys
+	then
+		/etc/init.d/cupsys restart
+	fi
+fi
+
+cd $PWD
+################################################################################
+#
+# echo informations
+#
+
+echo
+echo "    install driver completed"
+echo
+
+echo "    please use \"system-config-printer\" or \"lpadmin\" to add printer."
+echo
+
+exit 0
+

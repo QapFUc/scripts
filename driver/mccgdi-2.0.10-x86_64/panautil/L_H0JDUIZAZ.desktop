@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Panasonic Printer Setting
+Name[ja]=Panasonicプリンター設定
+Comment=Panasonic Printer Setting Utility
+Comment[ja]=Panasonicプリンターを設定します
+Exec=/usr/local/share/panasonic/printer/bin/L_H0JDUIZAZ
+Icon=/usr/local/share/panasonic/printer/bin/L_H0JDUIZAZ.png
+Terminal=false
+Type=Application
+Categories=HardwareSettings;Settings;Printing;
+

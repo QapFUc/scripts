@@ -1,0 +1,217 @@
+# Copyright (C) 2012 SANE Project.
+# Copyright (C) Panasonic System Networks Co., Ltd. 2012
+
+
+## Title: Number of options  ##
+# Use SANE default.
+msgid "Number of options"
+msgstr ""
+
+## DESC: Number of options  ##
+# Use SANE default.
+msgid ""
+"Read-only option that specifies how many options a specific devices "
+"supports."
+msgstr ""
+
+
+## Title: Preview  ##
+# Use SANE default.
+msgid "Preview"
+msgstr ""
+
+## DESC: Preview  ##
+# Use SANE default.
+msgid "Request a preview-quality scan."
+msgstr ""
+
+
+
+######## Scan Mode Group  ########
+# Use SANE default.
+msgid "Scan Mode"
+msgstr ""
+
+
+## Title: Scan mode  ##
+msgid "Scan mode"
+msgstr "掃描模式"
+
+## DESC: Scan mode  ##
+msgid ""
+"\"Black and White\" is for documents containing only text or line art. "
+"\"Grayscale\" is for documents containing photographs. \"Color\" is for "
+"document containing color image (color scan models only)."
+msgstr ""
+"\"黑白\" 適用在掃描只有文字或線條的文件。 "
+"\"灰階\" 適用在掃描具有圖像的文件。 "
+"\"彩色\" 適用在掃描具有彩色圖像的文件。"
+
+## Contents: Scan mode  ##
+
+msgid "Black and White"
+msgstr "黑白"
+
+msgid "Grayscale"
+msgstr "灰階"
+
+msgid "Color"
+msgstr "彩色"
+
+
+## Title: Scan resolution  ##
+msgid "Scan resolution"
+msgstr "解析度"
+
+## DESC: Scan resolution  ##
+msgid "Select a resolution of your document."
+msgstr "選擇所要掃描文件的解析度."
+
+
+## Title: Duplex  ##
+msgid "Duplex"
+msgstr "雙面掃描"
+
+## DESC: Duplex  ##
+msgid ""
+"\"None\": Scan one side of your document. \"Flip on Long Edge\": Scan "
+"both sides if your document layout is long edge. \"Flip on Short Edge\": "
+"Scan both sides if your document layout is short edge."
+msgstr ""
+"\"無\": 掃描文件的單面。 "
+"\"長邊翻頁\": 描文件的雙面時將形式設定為長邊。 "
+"\"短邊翻頁\": 描文件的雙面時將形式設定為短邊。"
+
+## Contents: Duplex  ##
+
+msgid "None"
+msgstr "無"
+
+msgid "Flip on Long Edge"
+msgstr "長邊翻頁"
+
+msgid "Flip on Short Edge"
+msgstr "短邊翻頁"
+
+
+
+######## Geometry Group  ########
+# Use SANE default.
+msgid "Geometry"
+msgstr ""
+
+
+## Title: Scan Size  ##
+msgid "Scan Size"
+msgstr "掃描大小"
+
+## DESC: Scan Size  ##
+msgid ""
+"Select a Scan Size that corresponds to the size of your original "
+"document."
+msgstr "選擇您所要掃描原稿文件的尺寸。"
+
+## Contents: Scan Size  ##
+
+msgid "A4"
+msgstr ""
+
+msgid "Letter"
+msgstr ""
+
+msgid "Legal"
+msgstr ""
+
+msgid "B5(ISO)"
+msgstr ""
+
+msgid "B5(JIS)"
+msgstr ""
+
+msgid "16K"
+msgstr ""
+
+msgid "8.5\"x13\""
+msgstr "F4/Folio/Foolscap"
+
+msgid "8.5\"x13.4\""
+msgstr "Mexico Oficio/India Legal"
+
+msgid "A5"
+msgstr ""
+
+msgid "User Define"
+msgstr "使用者自訂"
+
+
+## Title: Top-left x  ##
+# Use SANE default.
+msgid "Top-left x"
+msgstr ""
+
+## DESC: Top-left x  ##
+# Use SANE default.
+msgid "Top-left x position of scan area."
+msgstr ""
+
+
+## Title: Top-left y  ##
+# Use SANE default.
+msgid "Top-left y"
+msgstr ""
+
+## DESC: Top-left y  ##
+# Use SANE default.
+msgid "Top-left y position of scan area."
+msgstr ""
+
+
+## Title: Bottom-right x  ##
+# Use SANE default.
+msgid "Bottom-right x"
+msgstr ""
+
+## DESC: Bottom-right x  ##
+# Use SANE default.
+msgid "Bottom-right x position of scan area."
+msgstr ""
+
+
+## Title: Bottom-right y  ##
+# Use SANE default.
+msgid "Bottom-right y"
+msgstr ""
+
+## DESC: Bottom-right y  ##
+# Use SANE default.
+msgid "Bottom-right y position of scan area."
+msgstr ""
+
+
+
+######## Enhancement Group  ########
+# Use SANE default.
+msgid "Enhancement"
+msgstr ""
+
+
+## Title: Brightness  ##
+msgid "Brightness"
+msgstr "亮度"
+
+## DESC: Brightness  ##
+msgid "The balance of light and dark colors in an image."
+msgstr "選擇所要掃描文件的亮度協調程度"
+
+
+## Title: Contrast  ##
+msgid "Contrast"
+msgstr "對比"
+
+## DESC: Contrast  ##
+msgid ""
+"The relative difference between the dark and light portions of an image."
+msgstr "在影像的對比度上進行差異的調整"
+
+
+
