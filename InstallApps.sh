@@ -28,6 +28,7 @@ sudo pacman -S pipewire pipewire-pulse pipewire-jack
 sudo pacman -S wine wine-mono wine-gecko
 sudo pacman -S rclone neofetch scrcpy btop neovim ranger fish
 chsh -s /usr/bin/fish
+sudo chsh -s /usr/bin/fish
 sudo pacman -S qbittorrent bitwarden firefox
 sudo pacman -S vlc audacity
 sudo pacman -S telegram-desktop thunderbird discord
