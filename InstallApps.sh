@@ -1,14 +1,12 @@
 #!/bin/bash
 echo "Open multilib in /etc/pacman.conf and change the server to the desired date"
 read m
+sudo pacman -Syu
 sudo pacman -S archlinux-keyring
 sudo pacman -Syu
 sudo pacman -S reflector rsync curl
 sudo reflector --verbose --country 'Germany' -l 25 --sort rate --save /etc/pacman.d/mirrorlist
 sudo pacman -Syyuu
-sudo pacman -S dbus-broker
-sudo systemctl enable dbus-broker.service
-sudo systemctl disable dbus.service
 sudo pacman -S evince
 sudo pacman -S cups
 sudo systemctl enable cups.service
@@ -26,14 +24,13 @@ sudo pacman -S intel-ucode
 sudo pacman -S android-udev cmake gcc arduino jre8-openjdk
 sudo pacman -S nvidia
 sudo pacman -S texlive-most textlive-lang
-sudo pacman -S pipewire pipewire-pulse pipewire-jack gnome-bluetooth gnome-tweaks
-sudo pacman -S gnome-shell gnome-console gnome-tweak-tool gnome-control-center gdm gnome-keyring nautilus file-roller gnome-text-editor gnome-calculator
+sudo pacman -S pipewire pipewire-pulse pipewire-jack
 sudo pacman -S dconf-editor login-manager-settings 
 sudo pacman -S wine wine-mono wine-gecko
 sudo pacman -S rclone fish neofetch scrcpy htop btop
-sudo chsh -s /usr/bin/fish
-chsh -s /usr/bin/fish
-sudo systemctl enable bluetooth.service 
+sudo chsh -s /usr/bin/zsh
+chsh -s /usr/bin/zsh
+curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 sudo pacman -S qbittorrent bitwarden
 sudo pacman -S vlc audacity
 sudo pacman -S telegram-desktop thunderbird discord
@@ -46,42 +43,8 @@ read m
 cd
 mkdir ~/GITApps
 cd GITApps
-git clone https://aur.archlinux.org/gdm-prime.git
-cd gdm-prime
-makepkg -sri
-cd
-cd GITApps
-git clone https://aur.archlinux.org/optimus-manager.git 
-cd optimus-manager
-makepkg -sri
-echo "WaylandEnable=false" >> /etc/gdm/custom.conf
-cd
-cd GITApps
-git clone https://aur.archlinux.org/gnome-browser-connector.git 
-cd gnome-browser-connector
-makepkg -sri
-cd
-cd GITApps
-git clone https://aur.archlinux.org/touchegg.git
-cd touchegg
-makepkg -sri
-sudo systemctl enable touchegg.service
-sudo systemctl start touchegg
-cd
-cd GITApps
-git clone https://aur.archlinux.org/appeditor-git.git
-cd appeditor-git
-makepkg -sri
-cd
-cd GITApps
 git clone https://aur.archlinux.org/stacer.git
 cd stacer
-makepkg -sri
-cd
-cd GITApps
-gpg --recv-keys 5E3C45D7B312C643
-git clone https://aur.archlinux.org/spotify.git
-cd spotify
 makepkg -sri
 cd
 cd GITApps
@@ -104,12 +67,6 @@ git clone https://aur.archlinux.org/onlyoffice-bin.git
 cd onlyoffice-bin
 makepkg -sri
 cd
-cd GITApps
-git clone https://aur.archlinux.org/paru.git
-cd paru
-makepkg -sri
-cd
-paru -S protonvpn
 cd GITApps
 git clone https://aur.archlinux.org/clion.git
 cd clion
