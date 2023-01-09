@@ -26,10 +26,8 @@ sudo pacman -S nvidia-dkms
 sudo pacman -S texlive-most textlive-lang
 sudo pacman -S pipewire pipewire-pulse pipewire-jack 
 sudo pacman -S wine wine-mono wine-gecko
-sudo pacman -S rclone neofetch scrcpy btop neovim ranger
-sudo chsh -s /usr/bin/zsh
-chsh -s /usr/bin/zsh
-curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+sudo pacman -S rclone neofetch scrcpy btop neovim ranger fish
+chsh -s /usr/bin/fish
 sudo pacman -S qbittorrent bitwarden firefox
 sudo pacman -S vlc audacity
 sudo pacman -S telegram-desktop thunderbird discord
