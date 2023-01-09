@@ -1,13 +1,13 @@
 #!/bin/bash
 echo "Open multilib in /etc/pacman.conf and change the server to the desired date"
-read m
+read yes
 sudo pacman -Syu
 sudo pacman -S archlinux-keyring
 sudo pacman -Syu
 sudo pacman -S reflector rsync curl
 sudo reflector --verbose --country 'Germany' -l 25 --sort rate --save /etc/pacman.d/mirrorlist
 sudo pacman -Syyuu
-sudo pacman -S evince
+sudo pacman -S atril
 sudo pacman -S cups
 sudo systemctl enable cups.service
 sudo systemctl start cups.service
@@ -21,17 +21,16 @@ cd ../
 cd ../
 sudo pacman -S amd-ucode
 sudo pacman -S intel-ucode
-sudo pacman -S android-udev cmake gcc arduino jre8-openjdk
-sudo pacman -S nvidia
+sudo pacman -S android-udev cmake gcc arduino jre17-openjdk xclip
+sudo pacman -S nvidia-dkms
 sudo pacman -S texlive-most textlive-lang
-sudo pacman -S pipewire pipewire-pulse pipewire-jack
-sudo pacman -S dconf-editor login-manager-settings 
+sudo pacman -S pipewire pipewire-pulse pipewire-jack 
 sudo pacman -S wine wine-mono wine-gecko
-sudo pacman -S rclone fish neofetch scrcpy htop btop
+sudo pacman -S rclone neofetch scrcpy btop neovim ranger
 sudo chsh -s /usr/bin/zsh
 chsh -s /usr/bin/zsh
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
-sudo pacman -S qbittorrent bitwarden
+sudo pacman -S qbittorrent bitwarden firefox
 sudo pacman -S vlc audacity
 sudo pacman -S telegram-desktop thunderbird discord
 sudo pacman -S blender inkscape kdenlive krita gimp obs-studio
@@ -39,7 +38,7 @@ sudo pacman -S noto-fonts-emoji noto-fonts ttf-liberation
 sudo pacman -S steam
 
 echo "You wish install Apps from aur? If no press Ctrl + C"
-read m
+read yes
 cd
 mkdir ~/GITApps
 cd GITApps
@@ -72,7 +71,3 @@ git clone https://aur.archlinux.org/clion.git
 cd clion
 makepkg -sri
 cd
-
-
-
-
