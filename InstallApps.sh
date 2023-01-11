@@ -30,7 +30,7 @@ sudo pacman -S rclone neofetch scrcpy btop neovim ranger fish
 chsh -s /usr/bin/fish
 sudo chsh -s /usr/bin/fish
 sudo pacman -S qbittorrent bitwarden firefox
-sudo pacman -S vlc audacity
+sudo pacman -S vlc audacity ranger
 sudo pacman -S telegram-desktop thunderbird discord
 sudo pacman -S blender inkscape kdenlive krita gimp obs-studio
 sudo pacman -S noto-fonts-emoji noto-fonts ttf-liberation
@@ -43,30 +43,35 @@ mkdir ~/GITApps
 cd GITApps
 git clone https://aur.archlinux.org/stacer.git
 cd stacer
-makepkg -sri
+makepkg -sric
 cd
 cd GITApps
 git clone https://aur.archlinux.org/timeshift.git 
 cd timeshift
-makepkg -sri
+makepkg -sric
 cd
 cd GITApps
 git clone https://aur.archlinux.org/zoom.git
 cd zoom
-makepkg -sri
+makepkg -sric
 cd
 cd GITApps
 git clone https://aur.archlinux.org/teams.git
 cd teams
-makepkg -sri
+makepkg -sric
 cd
 cd GITApps
 git clone https://aur.archlinux.org/onlyoffice-bin.git
 cd onlyoffice-bin
-makepkg -sri
+makepkg -sric
 cd
 cd GITApps
 git clone https://aur.archlinux.org/clion.git
 cd clion
-makepkg -sri
+makepkg -sric
+cd
+cd GITApps
+git clone https://aur.archlinux.org/yandex-music-player.git
+cd yandex-music-player
+makepkg -sric
 cd
